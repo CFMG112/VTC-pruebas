@@ -1,0 +1,72 @@
+<div class="container">
+
+  <div class="page-header">
+    <h1 class="page-title" i18n="@@transformersMaintenances">Transformers Maintenances</h1>
+    <div class="page-options d-flex" >
+    </div>
+  </div>
+
+  <p class="font-italic text-info" i18n="@@timeinfo">All times shown are in EST</p>
+
+  <div class="card">
+    <div class="card-header">
+      <h3 class="card-title" i18n="@@maintenances">Maintenances</h3>
+    </div>
+    <div class="table-responsive">
+      <div class="row">
+        <div class="col-sm-12" *ngIf="maintences">
+          <table class="table table-hover table-vcenter card-table">
+            <thead>
+              <tr>
+                <th i18n="@@jobNumber">Job Number</th>
+                <th class="d-none d-md-table-cell" i18n="@@name">Nick Name</th>
+
+                <th class="d-none d-md-table-cell" i18n="@@type">Type</th>
+                <th i18n="@@date">Date</th>
+                <th class="text-center" i18n="@@status">Completed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let maintence of maintences; let indx = index">
+                <td (click)="navigate(maintence.accountId,maintence.transformer.id)"> 
+                  {{ maintence.transformer.jobNumber }} </td>
+                <td class="d-none d-md-table-cell" (click)="navigate(maintence.accountId,maintence.transformer.id)">
+                  {{ maintence.transformer.name }} </td>
+                <td class="d-none d-md-table-cell" (click)="navigate(maintence.accountId,maintence.transformer.id)">
+                  {{ maintence.maintenance.type }} </td>
+                <td (click)="navigate(maintence.accountId,maintence.transformer.id)">
+                  {{ maintence.expirationDate| date  }} </td>
+                <td class="text-center">
+                  <p-checkbox name="status-{{indx}}" binary="true"
+                    [(ngModel)]="maintence.status" (onChange)="onChange(maintence)"></p-checkbox>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+  <p-dialog header="Delete user" [(visible)]="display" [modal]="true" *ngIf="user"
+    [responsive]="true" [style]="{width: '350px', minWidth: '200px'}" [minY]="70"
+    [closable]="false" [baseZIndex]="10000">
+  
+    <div class="">
+      Are you sure you want to delete the user <strong>{{ user.username }}</strong> permanently?
+      <p class="mt-2"><strong>This can't be undone</strong></p>
+    </div>
+    <div class="pt-5">
+      <p>Type the username to continue</p>
+      <input class="form-control mt-1" type="text" [(ngModel)]="confirm" name="confirm">
+    </div>
+  
+    <p-footer>
+      <button type="button" class="btn btn-secondary mr-2" (click)="display=false"> Cancel </button>
+      <button type="button" class="btn btn-danger" (click)="delete(user.id)"
+        [disabled]="confirm !== user.username"> Delete </button>
+    </p-footer>
+  </p-dialog>
+  -->

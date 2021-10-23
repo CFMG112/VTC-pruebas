@@ -1,0 +1,174 @@
+<div class="container">
+
+  <div class="page-header">
+    <h1 class="page-title" i18n="@@city">
+      City
+    </h1>
+  </div>
+
+  <div>
+    <form *ngIf="city" name="form" #f="ngForm" (ngSubmit)="f.form.valid && save()" novalidate>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="form-label" for="name" i18n="@@city*">City
+              <span class="form-required">*</span>
+            </label>
+            <input type="text" i18n-placeholder="@@city" maxlength="45" class="form-control" [(ngModel)]="city.city" name="name"
+              placeholder="Name" required maxlength="45"
+              #name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && name.invalid }">
+            <div class="invalid-feedback" *ngIf="f.submitted && name.invalid">
+              <div *ngIf="name.errors.required" i18n="@@requiredError">Required</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="form-label" for="country" i18n="@@country*">Country
+              <span class="form-required">*</span>
+            </label>
+            <p-dropdown name="countryId" #countryId="ngModel" required [options]="countries"
+              [(ngModel)]="city.countryId" (onChange)="onRefresh()"></p-dropdown>
+            <div>
+              <a i18n="@@addNewCountry" class="pointer" (click)="onOpenNewCountryDialog()">Add new Country</a>
+            </div>
+            <div class="invalid-feedback" *ngIf="f.submitted && countryId.invalid">
+              <div *ngIf="countryId.errors.required" i18n="@@requiredError">Required</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="form-label" for="stateId" i18n="@@state*">State
+              <span class="form-required">*</span>
+            </label>
+            <p-dropdown name="stateId" #stateId="ngModel" [options]="states" [(ngModel)]="city.stateId" required>
+            </p-dropdown>
+            <div>
+              <a i18n="@@addNewState" class="pointer" (click)="onOpenNewStateDialog()">Add new State</a>
+            </div>
+            <div class="invalid-feedback" *ngIf="f.submitted && stateId.invalid">
+              <div *ngIf="stateId.errors.required" i18n="@@requiredError">Required</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p i18n="@@requiredFields"><span class="form-required">*</span> Required fields</p>
+      <div class="form-group pt-4">
+        <button type="submit" class="btn btn-primary" i18n="@@save">Save</button>
+        <button type="button" class="btn btn-secondary ml-2" [routerLink]="['../../../cities']"
+          i18n="@@cancel">Cancel</button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+
+<p-dialog header="Create new Country" i18n-header="@@addNewCountry" [(visible)]="displayCountryDialog" [modal]="true"
+  [style]="{width: '450px', minWidth: '200px'}" [minY]="70" [closable]="true">
+
+  <form name="formCountry" #formCountry="ngForm" (ngSubmit)="formCountry.form.valid && onCreateCountry()" novalidate>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label class="form-label" for="countryName" i18n="@@country*">Country
+            <span class="form-required">*</span>
+          </label>
+          <input type="text" i18n-placeholder="@@country" class="form-control" [(ngModel)]="country.country" name="countryName"
+            placeholder="Country" required maxlength="45"
+            #countryName="ngModel" [ngClass]="{ 'is-invalid': formCountry.submitted && countryName.invalid }">
+          <div class="invalid-feedback" *ngIf="formCountry.submitted && countryName.invalid">
+            <div *ngIf="countryName.errors.required" i18n="@@requiredError">Required</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="form-group">
+          <label class="form-label" for="iso">ISO 2
+            <span class="form-required">*</span>
+          </label>
+          <input type="text" class="form-control" [(ngModel)]="country.iso2" name="iso"
+            placeholder="US" required maxlength="45"
+            #iso="ngModel" [ngClass]="{ 'is-invalid': formCountry.submitted && iso.invalid }">
+          <div class="invalid-feedback" *ngIf="formCountry.submitted && iso.invalid">
+            <div *ngIf="iso.errors.required" i18n="@@requiredError">Required</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="form-group">
+          <label class="form-label" for="isoo">ISO 3
+            <span class="form-required">*</span>
+          </label>
+          <input type="text" i18n-placeholder="@@iso3" class="form-control" [(ngModel)]="country.iso3" name="isoo"
+            placeholder="USA" required maxlength="45"
+            #isoo="ngModel" [ngClass]="{ 'is-invalid': formCountry.submitted && isoo.invalid }">
+          <div class="invalid-feedback" *ngIf="formCountry.submitted && isoo.invalid">
+            <div *ngIf="isoo.errors.required" i18n="@@requiredError">Required</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p-footer class="float-right">
+      <button type="button" class="btn btn-secondary mr-2" (click)="displayCountryDialog=false" i18n="@@cancel"> Cancel
+      </button>
+      <button type="submit" class="btn btn-primary" i18n="@@createCityButton">
+        Create
+      </button>
+    </p-footer>
+  </form>
+
+</p-dialog>
+
+
+<p-dialog header="Create new State" i18n-header="@@addNewState" [(visible)]="displayStateDialog" [modal]="true"
+  [style]="{width: '450px', minWidth: '200px'}" [minY]="70" [closable]="true">
+
+  <form name="formState" #formState="ngForm" (ngSubmit)="formState.form.valid && onCreateState()" novalidate>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label class="form-label" for="stateName" i18n="@@state*">State
+            <span class="form-required">*</span>
+          </label>
+          <input type="text" i18n-placeholder="@@state" class="form-control" [(ngModel)]="state.state" name="stateName"
+            placeholder="State" required maxlength="45"
+            #stateName="ngModel" [ngClass]="{ 'is-invalid': formState.submitted && stateName.invalid }">
+          <div class="invalid-feedback" *ngIf="formState.submitted && stateName.invalid">
+            <div *ngIf="stateName.errors.required" i18n="@@requiredError">Required</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="form-group">
+          <label class="form-label" for="cname">Country
+            <span class="form-required">*</span>
+          </label>
+          <p-dropdown name="cname" #cname="ngModel" [options]="countries" [(ngModel)]="state.countryId" required
+            appendTo="body" [ngClass]="{ 'is-invalid': formState.submitted && cname.invalid }"></p-dropdown>
+          <div class="invalid-feedback" *ngIf="formState.submitted && cname.invalid">
+            <div *ngIf="cname.errors.required" i18n="@@requiredError">Required</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p-footer class="float-right">
+      <button type="button" class="btn btn-secondary mr-2" (click)="displayStateDialog=false" i18n="@@cancel"> Cancel
+      </button>
+      <button type="submit" class="btn btn-primary" i18n="@@createCityButton">
+        Create
+      </button>
+    </p-footer>
+  </form>
+
+</p-dialog>

@@ -1,0 +1,87 @@
+<div class="container">
+
+  <div class="page-header">
+    <h1 class="page-title" i18n="@@cities">Cities</h1>
+    <div class="page-options d-flex">
+
+      <button type="button" *roleCanAccess="['admin']" name="button" class="btn btn-secondary ml-2"
+        [routerLink]="['../city/create']" i18n="@@add">Add</button>
+    </div>
+  </div>
+
+  <div class="card">
+
+    <div class="card-header ">
+      <h3 class="card-title" i18n="@@avialableCities">Available Cities</h3>
+      <div class="card-options">
+        <a href="javascript:void(0)" (click)="onRefresh()" class="mr-2">
+          <i class="fa fa-refresh" [ngClass]="{'spin': loading}"></i>
+        </a>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <div class="row">
+        <div class="col-sm-12">
+          <table class="table table-hover table-outline table-vcenter text-nowrap card-table">
+            <thead>
+              <tr>
+                <th i18n="@@city">City</th>
+                <th i18n="@@state">State</th>
+                <th class="d-none d-md-table-cell" i18n="@@country">Country</th>
+                <th class="d-none d-md-table-cell">ISO</th>
+                <th style="width:50px" *roleCanAccess="['admin']"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let city of displayCities">
+                <td [routerLink]="['../city', city.id]">
+                  {{ city.city }}
+                </td>
+                <td [routerLink]="['../city', city.id]">
+                  {{ city.state  }}
+                </td>
+                <td class="d-none d-md-table-cell" [routerLink]="['../city', city.id]">
+                  {{ city.country }}
+                </td>
+                <td class="d-none d-md-table-cell" [routerLink]="['../city', city.id]">
+                  {{ city.iso2 | uppercase}}
+                </td>
+
+                <td class="text-right" *roleCanAccess="['admin']">
+                  <a [routerLink]="['../city', city.id]" class="btn btn-sm btn-secondary mr-2"
+                    href="javascript:void(0)"><i class="fa fa-pencil"></i></a>
+                  <a (click)="onDeleteDialog(city)" class="btn btn-sm btn-danger" href="javascript:void(0)"><i
+                      class="fa fa-trash"></i></a>
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+          
+          <div class="row m-2">
+            <div class="col-sm-4 " *ngIf="displayCities"> {{getPaginatorTitle()}}</div>
+            <div class="col-sm-4">
+              <p-paginator [rows]="rows" [totalRecords]="total" (onPageChange)="onPaginate($event)"></p-paginator>
+            </div>
+            <div class="col-sm-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p-dialog header="Delete City" i18n-header="@@deleteCity" [(visible)]="display" [modal]="true" *ngIf="city"
+  [responsive]="true" [style]="{width: '350px', minWidth: '200px'}" [minY]="70" [closable]="false" [baseZIndex]="10000">
+
+  <div class="" i18n>
+    Are you sure you want to delete <strong>{{ city.city }}</strong> permanently?
+    <p class="mt-2"><strong>This can't be undone</strong></p>
+  </div>
+  <p-footer>
+    <button type="button" class="btn btn-secondary mr-2" (click)="display=false" i18n="@@cancel"> Cancel </button>
+    <button type="button" class="btn btn-danger" (click)="delete(city.id)" i18n="@@delete">
+      Delete </button>
+  </p-footer>
+</p-dialog>

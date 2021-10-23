@@ -1,0 +1,83 @@
+<div class="page-header">
+  <h1 class="page-title" i18n="@@transformers">Transformers</h1>
+  <div class="page-options d-flex">
+    <div class="input-icon">
+      <span class="input-icon-addon">
+        <i class="fe fe-search"></i>
+      </span>
+      <input type="text" class="form-control w-10" (keyup)="onFilter()" i18n-placeholder="@@searchPlaceholder"
+        placeholder="Search..." [(ngModel)]="filter">
+    </div>
+    <button type="button" name="button" class="btn btn-secondary ml-2" [routerLink]="['../transformer/create']"
+      i18n="@@add">Add</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="table-responsive">
+    <div class="row">
+
+      <div class="col-sm-12">
+        <table class="table table-hover table-outline table-vcenter card-table">
+          <thead>
+            <tr>
+              <th i18n="@@name">Nick Name</th>
+              <th i18n="@@jobNumber">Job Number</th>
+              <th i18n="@@site">Site</th>
+              <th i18n="@@commissioningDate">Commissioning Date</th>
+              <th i18n="@@shippingDate">Shipping Date</th>
+              <th style="width:50px"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let transformer of transformers">
+              <td [routerLink]="['../transformer/', transformer.id]">
+                {{ transformer.name }}
+              </td>
+              <td [routerLink]="['../transformer/', transformer.id]">
+                {{ transformer.jobNumber }}
+              </td>
+              <td [routerLink]="['../transformer/', transformer.id]">
+                {{ transformer['site.name'] }}
+              </td>
+
+              <td [routerLink]="['../transformer/', transformer.id]">
+                {{ transformer.commissioningDate | date }}
+              </td>
+
+              <td [routerLink]="['../transformer/', transformer.id]">
+                {{ transformer.shippingDate | date }}
+              </td>
+
+              <td>
+                <a (click)="onDeleteDialog(transformer)" class="btn btn-sm btn-danger float-right"
+                  href="javascript:void(0)"><i class="fa fa-trash"></i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p-dialog header="Delete transformer" i18n-header="deleteTransformer" [(visible)]="display" [modal]="true"
+  *ngIf="transformer" [responsive]="true" [style]="{width: '350px', minWidth: '200px'}" [minY]="70" [closable]="false"
+  [baseZIndex]="10000">
+
+  <div class="" i18n>
+    Are you sure you want to delete the transformer with job number <strong>{{ transformer.jobNumber }}</strong>
+    permanently?
+    <p class="mt-2"><strong>This can't be undone</strong></p>
+  </div>
+  <div class="pt-5" i18n>
+    <p>Type the job number to continue</p>
+    <input class="form-control mt-1" type="text" [(ngModel)]="confirm" name="confirm">
+  </div>
+
+  <p-footer>
+    <button type="button" class="btn btn-secondary mr-2" (click)="display=false" i18n="@@cancel"> Cancel </button>
+    <button type="button" class="btn btn-danger" (click)="delete(transformer.id)"
+      [disabled]="confirm !== transformer.jobNumber" i18n="@@delete"> Delete </button>
+  </p-footer>
+</p-dialog>

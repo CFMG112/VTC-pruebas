@@ -1,0 +1,118 @@
+<div class="row">
+
+  <div class="col-sm-6 col-md-3" *roleCanAccess="['user']">
+    <div class="form-group">
+      <label class="form-label" for="categoryId" i18n="@@site">Site </label>
+      <p-dropdown [options]="sites" [(ngModel)]="selectedSiteId" (onChange)="onRefresh()"></p-dropdown>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-3">
+    <div class="form-group">
+      <label class="form-label" for="categoryId" i18n="@@status">Status </label>
+      <p-dropdown [options]="status" [(ngModel)]="selectedStatus" (onChange)="onRefresh()"></p-dropdown>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3 float-left">
+    <div class="form-group">
+      <label class="form-label" for="categoryId" i18n="@@filter">Filter </label>
+      <div class="input-icon">
+        <span class="input-icon-addon">
+          <i class="fe fe-search"></i>
+        </span>
+        <input type="text" class="form-control w-10" (keyup)="onFilter()" i18n-placeholder="@@searchPlaceholder"
+          placeholder="Search..." [(ngModel)]="filter">
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-4">
+    <label class="form-label text-white" >. </label>
+    <button class="btn mb-3 btn-secondary" (click)="onRefresh()" >
+      <i class="fe fe-refresh-cw" *ngIf="!spinner"></i>
+    </button>
+  </div>
+
+
+</div>
+
+<div class="row row-cards row-deck">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title" i18n="@@myTransformers">My Transformers</h3>
+        <div class="card-options">
+          <p-progressSpinner [style]="{width: '20px', height: '20px'}" strokeWidth="8" fill="#ffffff" animationDuration="1s" *ngIf="loading" ></p-progressSpinner>
+        </div>
+      </div>
+      <table class="table table-hover table-outline table-vcenter  card-table">
+        <thead>
+          <tr>
+            <th i18n="@@jobNumber">Job Number</th>
+            <th class="d-none d-md-table-cell" i18n="@@nickName">Nick Name</th>
+            <th *roleCanAccess="['user']" class="d-none d-md-table-cell" i18n="@@site">Site</th>
+            <th class="d-none d-md-table-cell" i18n="@@pressure">Pressure</th>
+            <th class="d-none d-md-table-cell" i18n="@@level">Level</th>
+            <th class="d-none d-md-table-cell" i18n="@@oil">Oil</th>
+            <th class="d-none d-md-table-cell" i18n="@@winding">Winding</th>
+            <th class="d-none d-md-table-cell" i18n="@@ambient">Ambient</th>
+            <th class="d-none d-md-table-cell">SPR</th>
+            <th class="d-none d-md-table-cell">PRD</th>
+            <th i18n="@@connected">Connected</th>
+            <th i18n="@@status">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let t of transformersLogs" [routerLink]="[ '/dashboard/detail', t.id]"
+            [ngClass]="{'alert alert-danger': t && t?.status == 1}">
+            <td class="d-none d-md-table-cell"><span>{{t.jobNumber}}</span> </td>
+            <td>{{t.name}} </td>
+            <td *roleCanAccess="['user']" class="d-none d-md-table-cell"><span>{{t.siteName}}</span>
+            </td>
+
+            <td class="d-none d-md-table-cell" *ngIf="t">
+              <span *ngIf="t.tankPressure"> {{t.tankPressure?.toFixed(1)}} </span>
+              <span *ngIf="!t.tankPressure"> 0 </span> {{labels.tankPressure}}
+            </td>
+            <td class="d-none d-md-table-cell" *ngIf="t">
+              <span *ngIf="t.liquidLevel"> {{t.liquidLevel?.toFixed(1)}} </span>
+              <span *ngIf="!t.liquidLevel"> 0  </span> {{labels.liquidLevel}}
+            </td>
+            <td class="d-none d-md-table-cell" *ngIf="t">
+              <span *ngIf="t.oilTemperature"> {{t.oilTemperature?.toFixed(1)}} </span>
+              <span *ngIf="!t.oilTemperature"> 0 </span> {{labels.oilTemperature}} 
+            </td>
+            <td class="d-none d-md-table-cell" *ngIf="t">
+              <span *ngIf="t.windingTemperature"> {{t.windingTemperature?.toFixed(1)}} </span>
+              <span *ngIf="!t.windingTemperature"> 0  </span> {{labels.windingTemperature}} 
+            </td>
+            <td class="d-none d-md-table-cell" *ngIf="t">
+              <span *ngIf="t.ambientTemperature"> {{t.ambientTemperature?.toFixed(1)}}   </span>
+              <span *ngIf="!t.ambientTemperature"> 0 </span> {{labels.ambientTemperature}}
+            </td>
+            <td class="d-none d-md-table-cell" *ngIf="t">
+              <span class="badge badge-pill" [ngClass]="{'badge-danger': t.spr, 'badge-default': !t.spr}"><i
+                  class="fa fa-lightbulb-o "></i></span>
+            </td>
+            <td class="d-none d-md-table-cell" *ngIf="t">
+              <span class="badge badge-pill" [ngClass]="{'badge-danger': t.prd, 'badge-default': !t.prd}"><i
+                  class="fa fa-lightbulb-o "></i></span>
+            </td>
+            <td class="text-center">
+              <span *ngIf="isOfflineTransformer(t.logCreatedAt)">
+                <i class="fe fe-wifi  fe-wifi-off text-red" aria-hidden="true"></i>
+              </span>
+              <span *ngIf="!isOfflineTransformer(t.logCreatedAt)">
+                <i class="fe fe-wifi  fe-wifi  text-green" aria-hidden="true"></i>
+              </span>
+            </td>
+            <td *ngIf="t">
+              <span class="badge badge-success" *ngIf="t.status == 3" i18n="@@normal">Normal</span>
+              <span class="badge badge-warning" *ngIf="t.status == 2" i18n="@@warning">Warning</span>
+              <span class="badge badge-danger" *ngIf="t.status == 1" i18n="@@danger">Danger</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

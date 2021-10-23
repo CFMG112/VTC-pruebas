@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="page-header">
+    <h1 class="page-title" i18n="@@faqslong">
+      Frequently Asked Question
+    </h1>
+  </div>
+
+  <div>
+    <form *ngIf="faq" name="form" #f="ngForm" (ngSubmit)="f.form.valid && save()">
+      <div class="row">
+
+        <div class="col-md-8">
+          <div class="form-group">
+            <label class="form-label" for="name" i18n="@@question*">Question
+              <span class="form-required">*</span>
+            </label>
+            <input type="text" class="form-control" [(ngModel)]="faq.question" required maxlength="45" name="question" placeholder="Question"
+              required #question="ngModel" i18n-placeholder="@@question"
+              [ngClass]="{ 'is-invalid': f.submitted && question.invalid }">
+            <div class="invalid-feedback" *ngIf="f.submitted && question.invalid">
+              <div *ngIf="question.errors.required" i18n="@@required">Required</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="form-group">
+            <label class="form-label" for="name" i18n="@@answer*">Answer
+              <span class="form-required">*</span>
+            </label>
+            <textarea rows="5" class="form-control" [(ngModel)]="faq.answer" name="answer" placeholder="Answer" required
+              #answer="ngModel" i18n-placeholder="@@answer" required maxlength="500"
+              [ngClass]="{ 'is-invalid': f.submitted && answer.invalid }"></textarea>
+            <div class="invalid-feedback" *ngIf="f.submitted && answer.invalid">
+              <div *ngIf="answer.errors.required" i18n="@@requiredError">Required</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p i18n="@@requiredFields"><span class="form-required">*</span> Required fields</p>
+      <div class="form-group pt-4">
+        <button type="submit" class="btn btn-primary" i18n="@@save" >Save</button>
+        <button type="button" class="btn btn-secondary ml-2" [routerLink]="['/catalogs/faqs']"
+          i18n="@@cancel">Cancel</button>
+      </div>
+
+    </form>
+  </div>
+
+
+</div>

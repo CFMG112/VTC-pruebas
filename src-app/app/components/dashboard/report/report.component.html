@@ -1,0 +1,5 @@
+<div class="container-fluid">
+  <app-report-totals #totals (statusClicked)="list.setStatus($event)"></app-report-totals>
+  <app-report-transformer-list #list (accountRefreshed)="totals.changeAccount($event)"></app-report-transformer-list>
+</div>
+  

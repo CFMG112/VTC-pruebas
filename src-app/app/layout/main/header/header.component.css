@@ -1,0 +1,22 @@
+:host ::ng-deep .custom-toast .ui-toast-message {
+  padding: 10px 5px;
+  border-radius: 15px;
+  color: #ffffff;
+  background: #007bff;
+}
+
+:host ::ng-deep .custom-toast .ui-toast-close-icon {
+  margin: 10px 20px;
+  color: #ffffff;
+}
+
+.toast-link {
+  color: white;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0px;
+  max-width: 400px;
+  min-width: 300px;
+}

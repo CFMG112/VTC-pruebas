@@ -1,0 +1,112 @@
+<div class="container">
+
+  <div class="page-header">
+    <h1 class="page-title" i18n="@@accounts">Accounts</h1>
+    <div class="page-options d-flex">
+      <div class="input-icon">
+        <span class="input-icon-addon">
+          <i class="fe fe-search"></i>
+        </span>
+        <input type="text" class="form-control w-10" (keyup)="onFilter()" i18n-placeholder="@@searchPlaceholder"
+          placeholder="Search..." [(ngModel)]="filter">
+      </div>
+      <button type="button" name="button" class="btn btn-secondary ml-2" 
+        [routerLink]="['/accounts/create']" i18n="@@add">Add</button>
+    </div>
+  </div>
+
+  <div class="row" >
+    <div class="col-xs col-sm-6 col-md-3">
+      <div class="form-group">
+        <p-dropdown [options]="expirationFilters" [(ngModel)]="expiration" (onChange)="onFilter()" [filter]="true">
+        </p-dropdown>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h3 class="card-title" i18n="@@customerAccounts">Customer Accounts</h3>
+      <div class="card-options">
+        <a href="javascript:void(0)" (click)="onRefresh()" class="mr-2"><i class="fe fe-refresh-cw"></i></a>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <div class="row">
+        <div class="col-sm-12">
+          <table class="table table-hover table-outline table-vcenter text-nowrap card-table">
+            <thead>
+              <tr>
+                <th i18n="@@company">Company</th>
+                <th class="d-none d-md-table-cell" i18n="@@sector">Sector</th>
+                <th class="d-none d-md-table-cell" i18n="@@country">Country</th>
+                <th class="d-none d-md-table-cell" i18n="@@expirationDate">Expiration Date</th>
+                <th class="d-none d-md-table-cell" i18n="@@status">Status</th>
+                <th style="width:50px" ></th>
+                <th style="width:50px" ></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let account of displayAccounts" [ngClass]="{'alert alert-warning': account.expiration == 2,
+                  'alert alert-danger': account.expiration == 3 }">
+                <td [routerLink]="['/accounts/detail/', account._id || account.id]">
+                  {{ account.name }}
+                </td>
+                <td class="d-none d-md-table-cell" [routerLink]="['/accounts/detail/', account._id || account.id]">
+                  {{ account.sector }}
+                </td>
+                <td class="d-none d-md-table-cell" [routerLink]="['/accounts/detail/', account._id || account.id]">
+                  {{ account.country }}
+                </td>
+                <td class="d-none d-md-table-cell" [routerLink]="['/accounts/detail/', account._id || account.id]">
+                  {{ account.expirationDate | date }}
+                </td>
+                <td class="d-none d-md-table-cell" [routerLink]="['/accounts/detail/', account._id || account.id]">
+                  {{ account.isActive? 'Active' : 'Inactive' }}
+                </td>
+                <td>
+
+                </td>
+                <td class="text-right" >
+                  <a [routerLink]="['/accounts/edit/', account._id]" class="btn btn-sm btn-secondary mr-2"
+                    href="javascript:void(0)"><i class="fa fa-pencil"></i></a>
+                  <a (click)="onDeleteDialog(account)" class="btn btn-sm btn-danger" 
+                    href="javascript:void(0)"><i class="fa fa-trash"></i></a>
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+          <div class="row m-2">
+            <div class="col-sm-4 " *ngIf="displayAccounts"> {{getPaginatorTitle() }}</div>
+            <div class="col-sm-4">
+              <p-paginator [rows]="rows" [totalRecords]="total" (onPageChange)="onPaginate($event)"></p-paginator>
+            </div>
+            <div class="col-sm-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p-dialog header="Delete account" i18n-header="@@deleteAccount" [(visible)]="display" [modal]="true" *ngIf="account"
+  [responsive]="true" [style]="{width: '350px', minWidth: '200px'}" [minY]="70" [closable]="false" [baseZIndex]="10000">
+
+  <div class="" i18n="@@confirmationMsgAccount">
+    Are you sure you want to delete the account of <strong>{{ account.name }}</strong> permanently?
+    <p class="mt-2"><strong>This can't be undone</strong></p>
+  </div>
+  <div class="pt-5">
+    <p i18n="typeToContinue">Type the name to continue</p>
+    <input class="form-control mt-1" type="text" [(ngModel)]="confirm" name="confirm">
+  </div>
+
+  <p-footer>
+    <button type="button" class="btn btn-secondary mr-2" (click)="display=false" i18n="@@cancel"> Cancel </button>
+    <button type="button" class="btn btn-danger" (click)="delete(account._id)" [disabled]="confirm !== account.name"
+      i18n="@@delete">
+      Delete </button>
+  </p-footer>
+</p-dialog>

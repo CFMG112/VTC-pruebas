@@ -1,0 +1,215 @@
+.pointer {
+  cursor: pointer;
+}
+
+/* Calendar */
+.ui-calendar {
+  display: block;
+}
+
+body .ui-datepicker table td {
+  padding: 5px;
+}
+
+
+.header {
+  -webkit-app-region: drag
+}
+
+.is-invalid .form-control {
+  border-color: #cd201f;
+}
+
+.is-invalid .ui-dropdown {
+  border-color: #cd201f !important;
+}
+
+.container .container {
+  padding: 0;
+}
+
+.card-fullscreen-wrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  background: #fff;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+
+
+/* Data Table */
+body .ui-table .ui-table-thead>tr>th {
+  background-color: #fff;
+  border-bottom-width: 1px;
+  border: 0px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  color: #696969;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+.card-table tr td:first-child, .card-table tr th:first-child {
+  padding-left: 1.5rem;
+}
+
+body .ui-table .ui-table-thead>tr>th,
+body .ui-table .ui-table-tbody>tr>td,
+body .ui-table .ui-table-tfoot>tr>td {
+  padding: .5em;
+}
+
+body .ui-table .ui-table-thead>tr>th:first-child,
+body .ui-table .ui-table-tbody>tr>td:first-child,
+body .ui-table .ui-table-tfoot>tr>td:first-child {
+  padding-left: 1.5rem;
+}
+
+body .ui-table .ui-table-thead>tr>th:last-child,
+body .ui-table .ui-table-tbody>tr>td:last-child,
+body .ui-table .ui-table-tfoot>tr>td:last-child {
+  padding-right: 1.5rem;
+}
+
+body .ui-table .ui-sortable-column.ui-state-highlight {
+  background-color: #fff;
+  color: #444;
+}
+
+body .ui-table .ui-table-tbody>tr>td {
+  border: 0px solid #dee2e6;
+  background-color: inherit;
+  border-bottom: 1px solid #dee2e6;
+  vertical-align: middle;
+}
+
+body .ui-table .ui-table-tbody>tr:nth-child(even) {
+  background-color: #fff;
+}
+
+body .ui-table .ui-table-tbody>tr:nth-child(even):hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+body .ui-table .ui-sortable-column.ui-state-highlight .ui-sortable-column-icon {
+  color: #444;
+}
+
+body .ui-table .ui-sortable-column .ui-sortable-column-icon {
+  color: #aaa;
+}
+
+/* Calendar */
+.ui-datepicker {
+  width: auto;
+}
+
+.ui-datepicker td>span, .ui-datepicker td>a {
+  padding: 1em;
+}
+
+body .ui-datepicker table td>a, body .ui-datepicker table td>span {
+  padding: 5px;
+}
+
+.ui-datepicker.ui-widget .ui-datepicker-calendar td {
+  border-bottom: 0px solid rgba(213, 213, 213, 0.5);
+}
+
+.ui-datepicker.ui-widget .ui-datepicker-calendar thead th {
+  background-color: #fff;
+}
+
+.ui-widget-header {
+  background: #fff 0 0 repeat-x;
+  border: 0px solid #d9d9d9;
+}
+
+body .ui-datepicker table td {
+  padding: 4px;
+}
+
+body .ui-datepicker table {
+  margin: 0 0 0 0;
+}
+
+.ui-widget-header .ui-button, .ui-widget-content .ui-button, .ui-widget.ui-button, .ui-button {
+  color: #495057;
+  background-color: #fff;
+  border-color: rgba(0, 40, 100, 0.12);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.ui-fileupload-choose:not(.ui-state-disabled):hover, .ui-fileupload-choose.ui-state-focus {
+  color: #495057;
+  background-color: #f6f6f6;
+  border-color: rgba(0, 20, 49, 0.12);
+}
+
+.ui-widget {
+  font-family: inherit;
+}
+
+.ui-fileupload-choose .pi-plus::before {
+  content: "\F0A6";
+  display: none;
+}
+
+body .ui-paginator {
+  background-color: #fff;
+  border: 0px solid #c8c8c8;
+  padding: 2px;
+}
+
+body .ui-paginator .ui-paginator-page.ui-state-active {
+  background: #467fcf;
+  color: #ffffff;
+  border-color: #467fcf;
+}
+
+body .ui-paginator .ui-paginator-pages .ui-paginator-page.ui-state-active {
+  background-color: #467fcf;
+  color: #ffffff;
+}
+
+body .ui-paginator .ui-paginator-page, .ui-paginator .ui-paginator-pages, .ui-paginator .ui-paginator-next, .ui-paginator .ui-paginator-last, .ui-paginator .ui-paginator-first, .ui-paginator .ui-paginator-prev, .ui-paginator .ui-paginator-current {
+  height: 2em;
+  zoom: 1;
+  margin-left: 0.1em;
+  margin-right: .1em;
+  text-decoration: none;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+}
+
+body .ui-paginator a {
+  color: #555555;
+  padding: 4px 12px;
+}
+
+/* Dialog */
+body .ui-dialog .ui-dialog-titlebar {
+  border: 0px solid #c8c8c8;
+  background-color: #fff;
+}
+
+/* dropdown */
+body .ui-dropdown{
+  background: #ffffff;
+  border: 1px solid #d7dee8;
+  transition: border-color 0.2s;
+  width: 100%;
+  padding: .5px;
+}
+
+body .ui-inputtext {
+  padding: 0.520em;
+  border: 1px solid #d7dee8;
+}

@@ -1,0 +1,2659 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="accounts" datatype="html">
+        <source>Accounts</source>
+        <target>Cuentas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/main/menu/menu.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-list/account-list.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      
+      <trans-unit id="myAccount" datatype="html">
+        <source>My Account</source>
+          <target>Mi cuenta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/main/menu/menu.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+
+       <trans-unit id="timeinfo" datatype="html">
+        <source>All times shown are in EST</source>
+          <target>Todas las horas mostradas están en EST</target>
+       
+      </trans-unit>
+
+      <trans-unit id="internal-users" datatype="html">
+        <source>Internal Users</source>
+        <target>Usuarios Internos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/main/menu/menu.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="account-users" datatype="html">
+        <source>Account Users</source>
+        <target>Usuarios de la Cuenta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-detail/account-detail.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="users" datatype="html">
+        <source>Users</source>
+        <target>Usuarios</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user-list/user-list.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqs" datatype="html">
+        <source>FAQs</source>
+        <target>Preguntas Frecuentes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/main/menu/menu.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="catalogs" datatype="html">
+        <source>Catalogs</source>
+        <target>Catálogos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/main/menu/menu.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/catalogs/catalogs.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="maintenances" datatype="html">
+        <source>Maintenances</source>
+         <target>Mantenimientos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/main/menu/menu.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">253</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/next-maintences/next-maintences.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="settingsHeader" datatype="html">
+        <source>Settings</source>
+        <target>Configuraciones</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/main/menu/menu.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/settings/settings.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="usernameLabel" datatype="html">
+        <source>Username</source>
+         <target>Nombre de usuario</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/forgotpassword/forgotpassword.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      
+      <trans-unit id="usernamePlaceholder" datatype="html">
+        <source>Username</source>
+        <target>Nombre de usuario</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/forgotpassword/forgotpassword.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="requiredError" datatype="html">
+        <source> Required</source>
+        <target>Requerido</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/todos/todo/todo.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/todos/todo/todo.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user/user.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user/user.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user/user.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faqs/faq/faq.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/forgotpassword/forgotpassword.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-detail/maintenance-detail.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-detail/maintenance-detail.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-detail/maintenance-detail.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user/admin-user.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user/admin-user.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user/admin-user.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="usernameFormatError" datatype="html">
+        <source> The email must be a valid email</source>
+        <target>El correo electrónico debe ser válido</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/forgotpassword/forgotpassword.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="passwordLabel" datatype="html">
+        <source>Password </source>
+         <target>Contraseña</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="passwordPlaceholder" datatype="html">
+        <source>Password</source>
+        <target>Contraseña</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login" datatype="html">
+        <source>
+            Login
+          </source>
+          <target>Iniciar sesión</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/forgotpassword/forgotpassword.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/forgotpassword/forgotpassword.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="forgotPass" datatype="html">
+        <source>Forgot password?</source>
+         <target>¿Olvidaste tu contraseña?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="resetPass" datatype="html">
+        <source>Reset password</source>
+         <target>Cambiar contraseña</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="updatePassword" datatype="html">
+        <source>Update your password</source>
+         <target>Actualiza tu contraseña</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src-app\app\components\login\resetpassword\resetpassword.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+            <trans-unit id="enterCredentials" datatype="html">
+        <source>Enter your credentials and the new password.</source>
+         <target>Escribe tus credenciales y la nueva contraseña</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src-app\app\components\login\resetpassword\resetpassword.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="firstNameLabel" datatype="html">
+        <source>Name</source>
+          <target>Nombre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="firstNamePlaceholder" datatype="html">
+        <source>Name</source>
+            <target>Nombre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lastNameLabel" datatype="html">
+        <source>Last Name</source>
+            <target>Apellido</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lastNamePlaceholder" datatype="html">
+        <source>Last Name</source>
+            <target>Apellido</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="emailLabel" datatype="html">
+        <source>Email</source>
+            <target>Correo electrónico</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="emailPlaceholder" datatype="html">
+        <source>Email</source>
+            <target>Correo electrónico</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="emailError" datatype="html">
+        <source>Email has to be a valid email</source>
+            <target>Debe ser un correo válido</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="passwordError" datatype="html">
+        <source>Passwords don't match</source>
+         <target>Contraseñas no coinciden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="doublePasswordLabel" datatype="html">
+        <source>Confirm Password </source>
+         <target>Confirma la contraseña</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="doublePasswordPlaceholder" datatype="html">
+        <source>Password</source>
+         <target>Contraseña</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="createAccountButton" datatype="html">
+        <source>
+            Create Account
+          </source>
+           <target>Crear cuenta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/signup/signup.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="todo" datatype="html">
+        <source>
+      <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>
+        <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
+      <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+      Todo
+    </source>
+      <target>TODO</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/todos/todo/todo.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/todos/todo-list/todo-list.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="content" datatype="html">
+        <source>Content
+                  <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+                </source>
+                  <target>contenido*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/todos/todo/todo.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="level" datatype="html">
+        <source>Level
+                <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+              </source>
+                <target>Nivel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/todos/todo/todo.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/todos/todo-list/todo-list.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">228</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">273</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">319</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">363</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">408</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="isCompleted" datatype="html">
+        <source>Is Complete
+                <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+              </source>
+                <target>Completado?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/todos/todo/todo.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="requiredFields" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Required fields</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Campos Requeridos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/todos/todo/todo.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user/user.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">294</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-detail/maintenance-detail.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">145</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="save" datatype="html">
+        <source>Save</source>
+          <target>Guardar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/todos/todo/todo.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user/user.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">299</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faqs/faq/faq.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-detail/maintenance-detail.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user/admin-user.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cancel" datatype="html">
+        <source>Cancel</source>
+          <target>Cancelar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/todos/todo/todo.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-list/account-list.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user-list/user-list.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user/user.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">301</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">314</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">342</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">371</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer-list/transformer-list.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site-list/site-list.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faqs/faq/faq.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faqs/faq-list/faq-list.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-list/maintenance-list.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-detail/maintenance-detail.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/cities-list/cities-list.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user/admin-user.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="todos" datatype="html">
+        <source>
+      Todos
+    </source>
+      <target>Todos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/todos/todo-list/todo-list.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add" datatype="html">
+        <source>Add</source>
+          <target>Añadir</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/todos/todo-list/todo-list.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-list/account-list.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user-list/user-list.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">343</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer-list/transformer-list.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site-list/site-list.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faqs/faq-list/faq-list.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-list/maintenance-list.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/cities-list/cities-list.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="completed" datatype="html">
+        <source>Is Completed</source>
+          <target>Completado</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/todos/todo-list/todo-list.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="total" datatype="html">
+        <source>Total</source>
+          <target>Total</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-totals/report-totals.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="healthys" datatype="html">
+        <source>Healthys</source>
+          <target>Saludables</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-totals/report-totals.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="total2w" datatype="html">
+        <source>Total in 2 weeks</source>
+          <target>Total en 2 semanas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-totals/report-totals.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-totals/report-totals.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-totals/report-totals.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="warnings" datatype="html">
+        <source>Warnings</source>
+          <target>Advertencias</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-totals/report-totals.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="danger" datatype="html">
+        <source>Danger</source>
+          <target>Peligro</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-totals/report-totals.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">185</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="jobNumber" datatype="html">
+        <source>Job Number</source>
+          <target>Número de trabajo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer-list/transformer-list.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/next-maintences/next-maintences.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="site" datatype="html">
+        <source>Site</source>
+          <target>Sitio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer-list/transformer-list.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site-list/site-list.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pressure" datatype="html">
+        <source>Pressure</source>
+          <target>Presión</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oil" datatype="html">
+        <source>Oil</source>
+          <target>Aceite</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="winding" datatype="html">
+        <source>Winding</source>
+          <target>Bobinado</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ambient" datatype="html">
+        <source>Ambient</source>
+          <target>Ambiente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="status" datatype="html">
+        <source>Status</source>
+          <target>Estatus</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-list/account-list.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">266</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/next-maintences/next-maintences.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+
+       <trans-unit id="connected" datatype="html">
+        <source>Connected</source>
+          <target>Conexión</target>
+    
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+
+      </trans-unit>
+        <trans-unit id="filter" datatype="html">
+        <source>Filter</source>
+          <target>Filtrar</target>
+    
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+             <trans-unit id="notTransFound" datatype="html">
+        <source>No transformers found</source>
+          <target>No se encontraron transformadores</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="normal" datatype="html">
+        <source>
+                 Normal
+                </source>
+                  <target>Normal</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">183</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="warning" datatype="html">
+        <source>Warning</source>
+          <target>Advertencia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="transformerinfodetail" datatype="html">
+        <source>Transformer Information</source>
+          <target>Informacion del transformador</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="name" datatype="html">
+        <source>Name</source>
+          <target>Nombre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user-list/user-list.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user/user.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer-list/transformer-list.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site-list/site-list.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user/admin-user.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/next-maintences/next-maintences.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tankPressureDetail" datatype="html">
+        <source>Tank Pressure</source>
+          <target>Presión del tanque</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">200</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ambientTemperature" datatype="html">
+        <source>Ambient Temperature</source>
+          <target>Temperatura ambiental</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">245</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="liquidLevel" datatype="html">
+        <source>Liquid Level</source>
+          <target>Nivel de liquido</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">290</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oilTemperature" datatype="html">
+        <source>Oil Temperature</source>
+          <target>Temperatura del aceite</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">337</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="windingTemperature" datatype="html">
+        <source>Winding Temperature</source>
+          <target>Temperatura del bobinado</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-detail/report-transformer-detail.component.html</context>
+          <context context-type="linenumber">380</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="account" datatype="html">
+        <source>Account </source>
+          <target>Cuenta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-detail/account-detail.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/next-maintences/next-maintences.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="myTransformers" datatype="html">
+        <source>My Transformers</source>
+          <target>Mis Transformadores</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nickName" datatype="html">
+        <source>Nick Name</source>
+            <target>Nombre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/report-transformer-list/report-transformer-list.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="languagesLabel" datatype="html">
+        <source>
+        Language
+      </source>
+          <target>Idioma</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/settings/settings.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="periodicityLabel" datatype="html">
+        <source>
+        Mail Reports Periodicity
+      </source>
+       <target>Periodicidad de informes de correo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/settings/settings.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="searchPlaceholder" datatype="html">
+        <source>Search...</source>
+         <target>Buscar...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-list/account-list.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user-list/user-list.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer-list/transformer-list.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site-list/site-list.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faqs/faq-list/faq-list.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-list/maintenance-list.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/cities-list/cities-list.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="customerAccounts" datatype="html">
+        <source>Customer Accounts</source>
+         <target>Cuentas de clientes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-list/account-list.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="company" datatype="html">
+        <source>Company</source>
+         <target>Compañía</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-list/account-list.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sector" datatype="html">
+        <source>Sector</source>
+         <target>Sector</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-list/account-list.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="country" datatype="html">
+        <source>Country</source>
+         <target>País</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-list/account-list.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site-list/site-list.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/cities-list/cities-list.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="expirationDate" datatype="html">
+        <source>Expiration Date</source>
+         <target>Fecha de expiración</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-list/account-list.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirmationMsgAccount" datatype="html">
+        <source>
+    Are you sure you want to delete the account of <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{ account.name }}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> permanently?
+    <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>This can&apos;t be undone<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+  </source>
+   <target> ¿Está seguro de que desea eliminar la cuenta de <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{ account.name }}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> ?
+    <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Esto no puede desahacerse<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+ </target>
+   
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-list/account-list.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f0d62e344afbfecb931c9d51fa46e1c50922d9be" datatype="html">
+        <source>Type the name to continue</source>
+        <target>Escribe el nombre para continuar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-list/account-list.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site-list/site-list.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+        <note priority="1" from="description">typeToContinue</note>
+      </trans-unit>
+      <trans-unit id="delete" datatype="html">
+        <source>
+      Delete </source>
+         <target>Eliminar</target>
+   
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-list/account-list.component.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user-list/user-list.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer-list/transformer-list.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site-list/site-list.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site-list/site-list.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faqs/faq-list/faq-list.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faqs/faq-list/faq-list.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-list/maintenance-list.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-list/maintenance-list.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/cities-list/cities-list.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deleteAccount" datatype="html">
+        <source>Delete account</source>
+           <target>Eliminar cuenta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-list/account-list.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="name*" datatype="html">
+        <source>Name
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+               <target>Nombre*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user/user.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user/admin-user.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="company*" datatype="html">
+        <source>Company
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+            <target>Compañía*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sector*" datatype="html">
+        <source>Sector
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+            <target>Sector*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="country*" datatype="html">
+        <source>Country
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+            <target>País*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="state*" datatype="html">
+        <source>State
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+            <target>Estado*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="state" datatype="html">
+        <source>State</source>
+        <target>Estado</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site-list/site-list.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/cities-list/cities-list.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="city*" datatype="html">
+        <source>City
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+            <target>Ciudad*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="city" datatype="html">
+        <source>city</source>
+        <target>Ciudad</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site-list/site-list.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/cities-list/cities-list.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="address*" datatype="html">
+        <source>Address
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+            <target>Dirección*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="address" datatype="html">
+        <source>Address</source>
+        <target>Dirección</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site-list/site-list.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="expirationDate*" datatype="html">
+        <source>Expiration Date
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+            <target>Fecha de expiración*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="isactive" datatype="html">
+        <source>Is Active</source>
+        <target>Activo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="active" datatype="html">
+        <source>Active</source>
+          <target>Activo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-detail/account-detail.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inactive" datatype="html">
+        <source>Inactive</source>
+         <target>Inactivo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account/account.component.html</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-detail/account-detail.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="edit" datatype="html">
+        <source>Edit</source>
+         <target>Editar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-detail/account-detail.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="createdAt" datatype="html">
+        <source>
+              Created at: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{ account.createdAt | date }}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>
+            </source>
+             <target> Creado el: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{ account.createdAt | date }}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+             
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-detail/account-detail.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="expiration" datatype="html">
+        <source>
+              Expiration: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{ account.expirationDate | date }}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>
+            </source>
+             <target>Expiración: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{ account.expirationDate | date }}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>
+</target>
+             
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-detail/account-detail.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sites" datatype="html">
+        <source>Sites</source>
+         <target>Sitios</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accounts/account-detail/account-detail.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email" datatype="html">
+        <source>Email</source>
+         <target>Correo electrónico</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user-list/user-list.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user/user.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user/admin-user.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deleteUserQuestion" datatype="html">
+        <source>
+      Are you sure you want to delete the user <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{ user.username }}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> permanently?
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>This can&apos;t be undone<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+    </source>
+     <target>¿Estás seguro de que deseas eliminar al usuario <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{ user.username }}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>?
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Esto no puede deshacerse<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user-list/user-list.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+          <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="typeToContinue" datatype="html">
+        <source>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Type the username to continue<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input/&gt;"/>
+    </source>
+      <target> <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Escribe el nombre de usuario para continuar<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input/&gt;"/>
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user-list/user-list.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+           <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deleteUser" datatype="html">
+        <source>Delete user</source>
+         <target> Eliminar usuario </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user-list/user-list.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user" datatype="html">
+        <source>
+      User
+    </source>
+      <target>Usuario </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user/user.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lastName*" datatype="html">
+        <source>Last name
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+              <target>Apellido* </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user/user.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user/admin-user.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lastName" datatype="html">
+        <source>Last name</source>
+          <target> Apellido </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user/user.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email*" datatype="html">
+        <source>Email
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+             <target>Correo electrónico* </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/users/user/user.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user/admin-user.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="transformer" datatype="html">
+        <source>Transformer</source>
+   <target>Transformador </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="jobNumber*" datatype="html">
+        <source>Job Number
+            <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+          </source>
+          <target>Número de trabajo* </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gateway*" datatype="html">
+        <source>Gateway Device Id
+          </source>
+          <target>Id de dispositivo Gateway*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gateway" datatype="html">
+        <source>Gateway</source>
+        <target>Id de dispositivo Gateway</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="site*" datatype="html">
+        <source>Site
+            <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+          </source>
+          <target>Sitio*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="commissioningDate*" datatype="html">
+        <source>Commissioning Date </source>
+        <target>Fecha de puesta en servicio*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="shippingDate*" datatype="html">
+        <source>Shipping Date  
+          </source>
+             <target>Fecha de envío*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="geNamePlate" datatype="html">
+        <source>Get
+          Name Plate</source>
+          <target>Obtener el Name Plate</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="namePlate" datatype="html">
+        <source>Name Plate</source>
+          <target>Name Plate</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="coolingClass" datatype="html">
+        <source>Cooling Class</source>
+          <target>Clase de enfriamiento</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="impedance" datatype="html">
+        <source>Impedance</source>
+         <target>Impedancia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">145</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aplication" datatype="html">
+        <source>Aplication</source>
+         <target>Aplicación</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hvConnection" datatype="html">
+        <source>Connection HV</source>
+         <target>Conexión HV</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">171</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lvConnection" datatype="html">
+        <source>Connection LV</source>
+           <target>Conexión LV</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">186</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lv2Connection" datatype="html">
+        <source>Connection LV2</source>
+           <target>Conexión LV2</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">201</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">203</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tvConnection" datatype="html">
+        <source>Connection TV</source>
+           <target>Conexión TV</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">218</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="temperatureRise" datatype="html">
+        <source>Temperature Rise</source>
+           <target>Aumento de temperatura</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">224</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">226</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="manufactureDate" datatype="html">
+        <source>Manufacture Month/Year</source>
+          <target>Fecha de fabricacion mes/año</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">233</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">235</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="description" datatype="html">
+        <source>Description</source>
+          <target>Descripción</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">264</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-detail/maintenance-detail.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-detail/maintenance-detail.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+       <trans-unit id="description*" datatype="html">
+        <source>Description</source>
+           <target>Descripción*</target>
+            <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-detail/maintenance-detail.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="date" datatype="html">
+        <source>Date</source>
+         <target>Fecha</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">265</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/next-maintences/next-maintences.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5f4e61f086d4087603b4a55ed66a24be8054353c" datatype="html">
+        <source>
+    Are you sure you want to remove the maintenance?
+  </source>
+   <target>¿Estás seguro de que deseas eliminar el mantenimiento?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">310</context>
+        </context-group>
+        <note priority="1" from="description">removeTheMaintenanceQuestion</note>
+      </trans-unit>
+      <trans-unit id="remove" datatype="html">
+        <source> Remove </source>
+         <target>Eliminar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nextMaintanceDate" datatype="html">
+        <source>Next Maintenance Date </source>
+        <target>Próxima fecha de mantenimiento</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">325</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="maintenanceType" datatype="html">
+        <source>Maintenance Type </source>
+           <target>Tipo de mantenimiento</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">334</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="setNewDate" datatype="html">
+        <source>Set the new date </source>
+           <target>Establecer la nueva fecha</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">360</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accept" datatype="html">
+        <source> Accept </source>
+           <target>Aceptar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer/transformer.component.html</context>
+          <context context-type="linenumber">372</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="transformers" datatype="html">
+        <source>Transformers</source>
+         <target>Transformadores</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer-list/transformer-list.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="commissioningDate" datatype="html">
+        <source>Commissioning Date</source>
+         <target>Fecha de puesta en servicio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer-list/transformer-list.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="shippingDate" datatype="html">
+        <source>Shipping Date</source>
+         <target>Fecha de envío</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer-list/transformer-list.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1aa9145719caadc5ce2c5429be6016931d511627" datatype="html">
+        <source>
+    Are you sure you want to delete the transformer with job number <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{ transformer.jobNumber }}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>
+    permanently?
+    <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>This can&apos;t be undone<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+  </source>
+   <target> ¿Está seguro de que desea eliminar el transformador con el número de trabajo <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{ transformer.jobNumber }}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>
+    ?
+    <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Esto no puede deshacerse<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+ </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer-list/transformer-list.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="648a9052968d50e6047dd873191c4d231f7b2ae1" datatype="html">
+        <source>
+    <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Type the job number to continue<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+    <x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input/&gt;"/>
+  </source>
+   <target>  <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Escriba el número de trabajo para continuar<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+    <x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input/&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer-list/transformer-list.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="974b5acf083c9d15f0d462f5d48fab916f58388a" datatype="html">
+        <source>Delete transformer</source>
+           <target>Eliminar Transformador</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transformers/transformer-list/transformer-list.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <note priority="1" from="description">deleteTransformer</note>
+      </trans-unit>
+      <trans-unit id="extra*" datatype="html">
+        <source>Extra
+          </source>
+           <target>Información extra</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="extra" datatype="html">
+        <source>Outside Location</source>
+          <target>Informacion extra*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site/site.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="804662956202359f0306d143e6533fad491387a1" datatype="html">
+        <source>
+    Are you sure you want to delete the site
+    <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{ site.name }}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> permanently?
+    <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>This can&apos;t be undone<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+  </source>
+    <target>¿Estás seguro de que deseas eliminar el sitio
+    <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{ site.name }}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> ?
+    <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Esto no puede deshacerse<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sites/site-list/site-list.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqslong" datatype="html">
+        <source>
+      Frequently Asked Question
+    </source>
+    <target>Preguntas frecuentes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faqs/faq/faq.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/catalogs/catalogs.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="question*" datatype="html">
+        <source>Question
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+                <target>Pregunta*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faqs/faq/faq.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="question" datatype="html">
+        <source>Question</source>
+            <target>Pregunta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faqs/faq/faq.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="required" datatype="html">
+        <source>Required</source>
+            <target>Requerido</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faqs/faq/faq.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="answer*" datatype="html">
+        <source>Answer
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+                <target>Respuesta*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faqs/faq/faq.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="answer" datatype="html">
+        <source>Answer</source>
+            <target>Respuesta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faqs/faq/faq.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqfull" datatype="html">
+        <source>
+      Frequently Asked Questions
+    </source>
+        <target>Preguntas frecuentes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faqs/faq-list/faq-list.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a51946daaabe2ec3f0a9e2d347e2385298ff9fe1" datatype="html">
+        <source>
+    Are you sure you want to delete the Question permanently?
+    <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>This can&apos;t be undone<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+  </source>
+      <target>¿Está seguro de que desea eliminar la pregunta de forma permanente?
+        <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Esto no puede deshacerse<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faqs/faq-list/faq-list.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="newpasswordPlaceholder" datatype="html">
+        <source>Password</source>
+        <target>Contraseña</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="currentPasswordLabel" datatype="html">
+        <source>Password </source>
+        <target>Contraseña actual</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="newPasswordLabel" datatype="html">
+        <source>New password</source>
+        <target>Contraseña nueva</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirmPasswordLabel" datatype="html">
+        <source>Confirm password</source>
+        <target>Confirmar nueva contraseña</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirmpasswordPlaceholder" datatype="html">
+        <source>Confirm password</source>
+            <target>Confirma la contraseña</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="update" datatype="html">
+        <source>
+            Update
+          </source>
+              <target>Actualizar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/resetpassword/resetpassword.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="maintenance" datatype="html">
+        <source>
+      Maintenance
+    </source>
+        <target>Mantenimiento</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-list/maintenance-list.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-detail/maintenance-detail.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/catalogs/catalogs.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="predefined" datatype="html">
+        <source>
+              [predefined] </source>
+                  <target> [predefinido]</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-list/maintenance-list.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-detail/maintenance-detail.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fa25bd7f8673d90f4b45d9b298aaf89b46943fd7" datatype="html">
+        <source>
+    Are you sure you want to delete the maintenance permanently?
+    <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>This can&apos;t be undone<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+  </source>
+      <target>¿Está seguro de que desea eliminar el mantenimiento de forma permanente?
+    <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Esto no puede deshacerse<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+ </target>
+         
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-list/maintenance-list.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="type" datatype="html">
+        <source>Type
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+             <target>Tipo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-detail/maintenance-detail.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-detail/maintenance-detail.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+       
+      </trans-unit>
+      <trans-unit id="notPredefined" datatype="html">
+        <source>Not predefined</source>
+         <target>No predefinido</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-detail/maintenance-detail.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+       <trans-unit id="type*" datatype="html">
+        <source>Tipo</source>
+         <target>Tipo*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/next-maintences/next-maintences.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="frequency" datatype="html">
+        <source>Frequency
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+             <target>Frecuencia*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-detail/maintenance-detail.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="months" datatype="html">
+        <source>Months</source>
+         <target>Meses</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/maintenance-detail/maintenance-detail.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cities" datatype="html">
+        <source>Cities</source>
+         <target>Ciudades</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/catalogs/catalogs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/cities-list/cities-list.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="latitude*" datatype="html">
+        <source>Latitude
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+             <target>latitud*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="latitude" datatype="html">
+        <source>Latitude</source>
+         <target>latitud</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="longitude*" datatype="html">
+        <source>Longitude
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+             <target>Longitud*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="longitude" datatype="html">
+        <source>Longitude</source>
+           <target>Longitud</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="capital*" datatype="html">
+        <source>Capital
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+               <target>capital*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="population*" datatype="html">
+        <source>Population
+              <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+            </source>
+               <target>Población*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="population" datatype="html">
+        <source>Population</source>
+           <target>Poblacion</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/city/city.component.html</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loading" datatype="html">
+        <source>Loading...</source>
+           <target>Cargando...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/cities-list/cities-list.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="avialableCities" datatype="html">
+        <source>Available Cities</source>
+           <target>Ciudades Disponibles</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/cities-list/cities-list.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0c2ea8615e1e1bf5ac978d780bf7ff0e7f9dfdbb" datatype="html">
+        <source>
+    Are you sure you want to delete <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{ city.city }}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> permanently?
+    <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>This can&apos;t be undone<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+  </source>
+     <target> Estas seguro que quieres borrar <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{ city.city }}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> ?
+    <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Esto no puede deshacerse<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+ </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/cities-list/cities-list.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deleteCity" datatype="html">
+        <source>Delete City</source>
+          <target> Eliminar ciudad </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cities/cities-list/cities-list.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="userAccount" datatype="html">
+        <source>User Accounts</source>
+          <target> Cuentas de usuarios </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="role" datatype="html">
+        <source>Role</source>
+          <target> Rol </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lastname" datatype="html">
+        <source>Last name</source>
+          <target> Apellido </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user/admin-user.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="role*" datatype="html">
+        <source>Role </source>
+          <target> Rol* </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user/admin-user.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="requiredFiles" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Required fields</source>
+         <target> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Campos requeridos </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user/admin-user.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="transformersMaintenances" datatype="html">
+        <source>Transformers Maintenances</source>
+        <target>Mantenimiento de transformadores</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/maintenance/next-maintences/next-maintences.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="noResults" datatype="html">
+        <source>Not matching results for the selected parameters</source>
+        <target>No hay resultados que coincidan con la búsqueda</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/admin-users/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <!-- Added on 18/03/2020 -->
+      <trans-unit id="addNewCountry" datatype="html">
+        <source>Add new Country</source>
+        <target>Añadir nuevo País</target>
+      </trans-unit>
+      <trans-unit id="addNewState" datatype="html">
+        <source>Add new State</source>
+        <target>Añadir nuevo Estado</target>
+      </trans-unit>
+      <trans-unit id="createCityButton" datatype="html">
+        <source>Create</source>
+        <target>Crear</target>
+      </trans-unit>
+      <trans-unit id="logout" datatype="html">
+        <source>Logout</source>
+        <target>Cerrar Sesión</target>
+      </trans-unit>
+
+      <trans-unit id="forgotPasswordTitle" datatype="html">
+        <source>Forgot your password?</source>
+        <target>¿Olvidaste tu contraseña?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src-app\app\components\login\forgotpassword\forgotpassword.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="enterEmailSubTitle" datatype="html">
+        <source>Enter your email address and we'll get you back on track</source>
+        <target>Ingresa tu correo electrónico y lo arreglaremos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src-app\app\components\login\forgotpassword\forgotpassword.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="resetPassword" datatype="html">
+        <source>Update</source>
+        <target>Recuperar contraseña</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/forgotpassword/forgotpassword.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

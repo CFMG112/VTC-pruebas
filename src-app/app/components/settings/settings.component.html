@@ -1,0 +1,17 @@
+<div class="container">
+
+  <div class="page-header">
+    <h1 class="page-title" i18n="@@settingsHeader" i18n="@@settings">Settings</h1>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-md-3 col-sm-6">
+      <label i18n="@@languagesLabel" class="form-label" for="language" i18n="@@language">
+        Language
+      </label>
+      <p-dropdown [options]="languages" [(ngModel)]="selectedLanguage" (onChange)="onLanguageSelected()"
+        #language="ngModel" required name="language"></p-dropdown>
+    </div>
+  </div>
+
+</div>

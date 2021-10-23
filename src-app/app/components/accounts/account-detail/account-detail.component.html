@@ -1,0 +1,62 @@
+<div class="container">
+
+  <div class="page-header">
+    <h1 class="page-title" i18n="@@account">
+      My Account
+    </h1>
+
+    <div class="page-options d-flex" *ngIf="account">
+      <div class="m-2">
+        <button type="button" name="button" class="btn btn-secondary ml-2" [routerLink]="['/accounts/edit', accountId]"
+          i18n="@@edit">Edit</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div *ngIf="account" class="row">
+    <div class="col-sm-6">
+      <div class="card mb-2">
+        <div class="card-body py-3">
+          <h4 class="m-0"><small>{{ account.name }}</small></h4>
+          <span class="text-muted">{{ account.company }}</span>
+          <div class="row">
+            <div class="col-md-6" i18n="@@createdAt">
+              Created at: <strong>{{ account.createdAt | date }}</strong>
+            </div>
+            <div class="col-md-6" i18n="@@expiration">
+              Expiration: <strong>{{ account.expirationDate | date }}</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6" *ngIf="account.address">
+      <div class="card mb-2">
+        <div class="card-body py-3">
+          <h4 class="m-0"><small>{{ account.address.address }}</small></h4>
+          <div class=" text-muted">{{ account.city }}, {{ account.state }}</div>
+          <div class=" text-muted">{{ account.country }} </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" href="#" [routerLink]="['./transformers/']" routerLinkActive="active"
+            i18n="@@transformers">Transformers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" [routerLink]="['./sites/']" routerLinkActive="active" i18n="@@sites">Sites</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+
+</div>

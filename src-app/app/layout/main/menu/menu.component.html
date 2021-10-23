@@ -1,0 +1,40 @@
+<div class="row align-items-center collapse d-lg-flex ">
+  <div class="col-sm order-sm-first">
+    <ul class="nav nav-tabs border-0 flex-column flex-sm-row">
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['/my-account']" routerLinkActive="active" i18n="@@myAccount">My
+          Account</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['/users']" i18n="@@internal-users"
+          routerLinkActive="active">Users</a>
+      </li>
+      <li class="nav-item" *roleCanAccess="['admin', 'vtc']">
+        <a class="nav-link" href="#" [routerLink]="['/catalogs']" routerLinkActive="active"
+          i18n="@@catalogs">Catalogs</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['/next-maintenance']" routerLinkActive="active"
+          i18n="@@maintenances">Maintenances</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['/settings']" routerLinkActive="active"
+          i18n="@@settingsHeader">Settings</a>
+      </li>
+
+    </ul>
+  </div>
+  <div class="col-sm-2 ml-auto">
+    <ul class="nav nav-tabs float-right border-0 flex-column flex-sm-row ">
+      <li class="nav-item">
+        <a routerLinkActive="active" (click)="onLogout()" i18n="@@logout" class="nav-link">
+          Logout
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.transformer-title {
+    cursor: pointer;
+}
+
+.transformer-title:hover {
+    color: #000;
+}
+
+.small-icon {
+    font-size: 0.7em;
+}
+
+.transformer-row {
+    cursor: pointer;
+}
+
+.transformer-row:hover {
+    background-color: #F5F5F5;
+}

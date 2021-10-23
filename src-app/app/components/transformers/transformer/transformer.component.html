@@ -1,0 +1,376 @@
+<div class="page-header">
+  <h1 class="page-title">
+    <a (click)="onBack()" class="mr-3 pointer">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <span i18n="@@transformer">Transformer</span>
+  </h1>
+  <div class="page-options d-flex">
+
+  </div>
+
+</div>
+
+<div>
+  <form *ngIf="transformerStateService.transformer" name="form" #f="ngForm" (ngSubmit)="f.form.valid && save()" novalidate>
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="form-label" for="name" i18n="@@name*">Nick Name
+            <span class="form-required">*</span>
+          </label>
+          <input type="text" class="form-control" i18n-placeholder="@@name" [(ngModel)]="transformerStateService.transformer.name" name="name"
+            placeholder="Nick Name" required #name="ngModel" [attr.disabled]="adminPermissions ? null : ''"
+            [ngClass]="{ 'is-invalid': f.submitted && name.invalid }">
+          <div class="invalid-feedback" *ngIf="f.submitted && name.invalid">
+            <div *ngIf="name.errors.required" i18n="@@requiredError">Required</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="form-group">
+          <label class="form-label" for="job" i18n="@@jobNumber*">Job Number
+            <span class="form-required">*</span>
+          </label>
+          <input type="text" class="form-control" i18n-placeholder="@@jobNumber" [(ngModel)]="transformerStateService.transformer.jobNumber"
+            name="job" placeholder="Job Number" required #job="ngModel" [attr.disabled]="adminPermissions ? null : ''"
+            [ngClass]="{ 'is-invalid': f.submitted && job.invalid }">
+          <div class="invalid-feedback" *ngIf="f.submitted && job.invalid">
+            <div *ngIf="job.errors.required" i18n="@@requiredError">Required</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="form-group">
+          <label class="form-label" for="gateway" i18n="@@gateway">Gateway Device Id
+            <!--<span class="form-required">*</span>-->
+          </label>
+          <input type="text" class="form-control" i18n-placeholder="@@gateway" [(ngModel)]="transformerStateService.transformer.gatewayDeviceId"
+            name="gateway" placeholder="Gateway" #gateway="ngModel" [attr.disabled]="adminPermissions ? null : ''"
+            [ngClass]="{ 'is-invalid': f.submitted && gateway.invalid }">
+          <div class="invalid-feedback" *ngIf="f.submitted && gateway.invalid">
+            <div *ngIf="gateway.errors.required" i18n="@@requiredError">Required</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-6">
+        <div class="form-group">
+          <label class="form-label" for="site" i18n="@@site*">Site
+            <span class="form-required">*</span>
+          </label>
+          <p-dropdown inputStyleClass="form-control" i18n-placeholder="@@site" [options]="sites"
+            [(ngModel)]="transformerStateService.transformer.siteId" [filter]="true" name="site" required #site="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && site.invalid }" [disabled]="adminPermissions ? null : ''">
+          </p-dropdown>
+          <div>
+            <a class="pointer" [routerLink]="['../../../sites/site/create']" [queryParams]="{ from: url}">Create new Site</a>
+            
+          </div>
+
+          <div class="invalid-feedback" *ngIf="f.submitted && site.invalid">
+            <div *ngIf="site.errors.required" i18n="@@requiredError">Required</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="form-group">
+          <label class="form-label" for="commissioningDate" i18n="@@commissioningDate">Commissioning Date
+            <!--<span class="form-required">*</span>-->
+          </label>
+          <p-calendar [(ngModel)]="transformerStateService.transformer.commissioningDate" [yearNavigator]="true" [monthNavigator]="true"
+            yearRange="1900:2100" name="expirationDate" inputStyleClass="form-control"
+            [disabled]="adminPermissions ? null : ''" [style]="{ 'overflow': 'visible', 'z-index': '999'}"
+            dateFormat="mm/dd/yy" placeholder="MM/DD/YYYY" #commissioningDate="ngModel" [locale]="local"
+            [ngClass]="{ 'is-invalid': f.submitted && commissioningDate.invalid }">
+          </p-calendar>
+          <div class="invalid-feedback" *ngIf="f.submitted && commissioningDate.invalid">
+            <div *ngIf="commissioningDate.errors.required" i18n="@@requiredError">Required</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="form-group">
+          <label class="form-label" for="shippingDate" i18n="@@shippingDate">Shipping Date
+            <!--<span class="form-required">*</span>-->
+          </label>
+          <p-calendar [(ngModel)]="transformerStateService.transformer.shippingDate" [yearNavigator]="true" [monthNavigator]="true"
+            yearRange="1900:2100" name="shippingDate" inputStyleClass="form-control"
+            [disabled]="adminPermissions ? null : ''" [style]="{ 'overflow': 'visible', 'z-index': '999'}"
+            dateFormat="mm/dd/yy" placeholder="MM/DD/YYYY" #shippingDate="ngModel" [locale]="local"
+            [ngClass]="{ 'is-invalid': f.submitted && shippingDate.invalid }">
+          </p-calendar>
+          <div class="invalid-feedback" *ngIf="f.submitted && shippingDate.invalid">
+            <div *ngIf="shippingDate.errors.required" i18n="@@requiredError">Required</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row mt-4">
+      <div class="col-12">
+        <div class="">
+          <div class="mb-2">
+            <h4 class="card-title" i18n="@@namePlate">Name Plate</h4>
+          </div>
+          <div class="">
+            <div class="row">
+
+              <div class=" col-md-3 col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" for="mva">MVA</label>
+                  <input type="text" class="form-control" [(ngModel)]="transformerStateService.transformer.nameplate.mva" name="mva"
+                    placeholder="MVA" [attr.disabled]="adminPermissions ? null : ''">
+                </div>
+              </div>
+
+              <div class=" col-md-3 col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" for="coolingClass" i18n="@@coolingClass">Cooling Class</label>
+                  <input type="text" class="form-control" i18n-placeholder="@@coolingClass"
+                    [(ngModel)]="transformerStateService.transformer.nameplate.coolingClass" name="coolingClass" placeholder="Cooling Class"
+                    [attr.disabled]="adminPermissions ? null : ''">
+                </div>
+              </div>
+              <div class=" col-md-3 col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" for="impedance" i18n="@@impedance">Impedance</label>
+                  <input type="text" class="form-control" i18n-placeholder="@@impedance"
+                    [(ngModel)]="transformerStateService.transformer.nameplate.impedance" name="impedance" placeholder="Impedance"
+                    [attr.disabled]="adminPermissions ? null : ''">
+                </div>
+              </div>
+              <div class=" col-md-3 col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" for="aplication" i18n="@@aplication">Aplication</label>
+                  <input type="text" class="form-control" i18n-placeholder="@@aplication"
+                    [(ngModel)]="transformerStateService.transformer.nameplate.application" name="aplication" placeholder="Aplication"
+                    [attr.disabled]="adminPermissions ? null : ''">
+                </div>
+              </div>
+
+
+
+              <div class=" col-md-3 col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" for="hv">HV</label>
+                  <input type="text" class="form-control" [(ngModel)]="transformerStateService.transformer.nameplate.hvVolts" name="hv"
+                    placeholder="HV" [attr.disabled]="adminPermissions ? null : ''">
+                </div>
+              </div>
+              <div class=" col-md-3 col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" for="hvConnection" i18n="@@hvConnection">Connection HV</label>
+                  <input type="text" class="form-control" i18n-placeholder="@@hvConnection"
+                    [(ngModel)]="transformerStateService.transformer.nameplate.hvConnection" name="hvConnection" placeholder="Connection HV"
+                    [attr.disabled]="adminPermissions ? null : ''">
+                </div>
+              </div>
+              <div class=" col-md-3 col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" for="lv">LV</label>
+                  <input type="text" class="form-control" [(ngModel)]="transformerStateService.transformer.nameplate.lvVolts" name="lv"
+                    placeholder="LV" [attr.disabled]="adminPermissions ? null : ''">
+                </div>
+              </div>
+              <div class=" col-md-3 col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" for="lvConnection" i18n="@@lvConnection">Connection LV</label>
+                  <input type="text" class="form-control" i18n-placeholder="@@lvConnection"
+                    [(ngModel)]="transformerStateService.transformer.nameplate.lvConnection" name="lvConnection" placeholder="Connection LV"
+                    [attr.disabled]="adminPermissions ? null : ''">
+                </div>
+              </div>
+              <div class=" col-md-3 col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" for="lv2">LV2</label>
+                  <input type="text" class="form-control" [(ngModel)]="transformerStateService.transformer.nameplate.lv2Volts" name="lv2"
+                    placeholder="LV2" [attr.disabled]="adminPermissions ? null : ''">
+                </div>
+              </div>
+              <div class=" col-md-3 col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" for="lv2Connection" i18n="@@lv2Connection">Connection LV2</label>
+                  <input type="text" class="form-control" i18n-placeholder="@@lv2Connection"
+                    [(ngModel)]="transformerStateService.transformer.nameplate.lv2Connection" name="lv2Connection" placeholder="Connection LV2"
+                    [attr.disabled]="adminPermissions ? null : ''">
+                </div>
+              </div>
+              <div class=" col-md-3 col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" for="tv">TV</label>
+                  <input type="text" class="form-control" [(ngModel)]="transformerStateService.transformer.nameplate.tvVolts" name="tv"
+                    placeholder="TV" [attr.disabled]="adminPermissions ? null : ''">
+                </div>
+              </div>
+              <div class=" col-md-3 col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" for="tvConnection" i18n="@@tvConnection">Connection TV</label>
+                  <input type="text" class="form-control" i18n-placeholder="@@tvConnection"
+                    [(ngModel)]="transformerStateService.transformer.nameplate.tvConnection" name="tvConnection" placeholder="Connection TV"
+                    [attr.disabled]="adminPermissions ? null : ''">
+                </div>
+              </div>
+              <div class=" col-md-3 col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" for="temperatureRise" i18n="@@temperatureRise">Temperature Rise</label>
+                  <input type="text" class="form-control" i18n-placeholder="@@temperatureRise"
+                    [(ngModel)]="transformerStateService.transformer.nameplate.temperatureRise" name="temperatureRise"
+                    placeholder="Temperature Rise" [attr.disabled]="adminPermissions ? null : ''">
+                </div>
+              </div>
+
+              <div class=" col-md-3 col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" for="mva" i18n="@@manufactureDate">Manufacture Month/Year</label>
+                  <input type="text" class="form-control" i18n-placeholder="@@manufactureDate"
+                    [(ngModel)]="transformerStateService.transformer.nameplate.manifactureDate" name="manufactureDate" placeholder="Month/Year:"
+                    [attr.disabled]="adminPermissions ? null : ''">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-5">
+
+      <div class="col-md-12">
+        <div class="row row-cards row-deck">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title" i18n="@@maintenances">Maintenances</h3>
+                <div class="card-options">
+                  <a (click)="onShowMaintenance()" class="btn btn-sm btn-secondary ">
+                    <i class="fe fe-plus"></i>
+                  </a>
+                </div>
+              </div>
+              <table class="table table-outline table-vcenter card-table">
+                <thead>
+                  <tr>
+                    <th i18n="@@type">Type</th>
+                    <th class="d-none d-md-table-cell" i18n="@@description">Description</th>
+                    <th class="" i18n="@@date" style="width:90px">Date</th>
+                    <th class="" i18n="@@status">Status</th>
+                    <th style="width:120px"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let m of transformerStateService.transformer.maintenances; let i = index">
+                    <td>{{m.type}} </td>
+                    <td class="d-none d-md-table-cell">{{m.description}} </td>
+                    <td>{{m.expirationDate | date}} </td>
+
+                    <td>{{m.status ? 'Done' : 'Pending'}} </td>
+                    <td class="text-right">
+                      <button type="button" (click)="onEditShowMaintenance(m)" class="btn btn-sm btn-secondary mr-2">
+                        <i class="fa fa-pencil"></i>
+                      </button>
+                      <button type="button" (click)="onRemoveMaintenance(i)" class="btn btn-sm btn-danger">
+                        <i class="fa fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p i18n="@@requiredFields"><span class="form-required">*</span> Required fields
+    </p>
+
+
+    <div class="form-group pt-4">
+      <button type="submit" class="btn btn-primary" i18n="@@save" (click)="save()">Save</button>
+      <button type="button" class="btn btn-secondary ml-2" (click)="onCancel()" i18n="@@cancel">Cancel</button>
+    </div>
+
+  </form>
+</div>
+
+
+<p-dialog header="Add Maintence" i18n-header="@@maintenance" [(visible)]="addDisplay" [modal]="true" *ngIf="transformerStateService.transformer"
+  [responsive]="true" [style]="{width: '450px', minWidth: '200px'}" [minY]="70" [closable]="false">
+
+  <form *ngIf="transformerStateService.transformer" name="form" #f="ngForm" (ngSubmit)="f.form.valid && save()" novalidate>
+    <div class="col">
+      <div class="form-group">
+        <label class="form-label" for="expirationDate" i18n="@@nextMaintanceDate">Next Maintenance Date </label>
+        <p-calendar appendTo="body" [(ngModel)]="expirationDate" [yearNavigator]="true" [monthNavigator]="true"
+          yearRange="2000:2100" name="expirationDate" inputStyleClass="form-control"
+          [style]="{ 'overflow': 'visible', 'z-index': '999'}" dateFormat="mm/dd/yy" placeholder="MM/DD/YYYY"
+          [locale]="local">
+        </p-calendar>
+      </div>
+    </div>
+    <div class="col pb-10">
+      <div class="form-group">
+        <label class="form-label" for="maintenances" i18n="@@maintenanceType">Maintenance Type </label>
+        <p-dropdown appendTo="body" name="maintenances" [options]="maintenances" [(ngModel)]="maintenance"
+          [filter]="true"></p-dropdown>
+      </div>
+    </div>
+  </form>
+
+  <p-footer>
+    <button type="button" class="btn btn-secondary mr-2" (click)="addDisplay=false" i18n="@@cancel"> Cancel </button>
+    <button type="button" class="btn btn-primary" (click)="onAddMaintenance()" i18n="@@add"> Add </button>
+  </p-footer>
+</p-dialog>
+
+
+<p-dialog header="Edit Maintenance" i18n-header="@@edit" [(visible)]="editDisplay" [modal]="true"
+  *ngIf="selectedMaintenance" [responsive]="true" [style]="{width: '450px', minWidth: '200px'}" [minY]="70"
+  [closable]="false">
+
+  <form *ngIf="transformerStateService.transformer" name="form" #f="ngForm" (ngSubmit)="f.form.valid && save()" novalidate>
+    <div class="col mb-2">
+      <div class="form-group">
+        <label class="lead text-center" for="maintenances">{{selectedMaintenance.type}}</label>
+
+      </div>
+    </div>
+    <div class="col pb-10">
+      <div class="form-group">
+        <label class="form-label" for="expirationDate" i18n="@@setNewDate">Set the new date </label>
+        <p-calendar appendTo="body" [(ngModel)]="expirationDate" [yearNavigator]="true" [monthNavigator]="true"
+          [locale]="local" yearRange="2000:2100" name="expirationDate" inputStyleClass="form-control"
+          [style]="{ 'overflow': 'visible', 'z-index': '999'}" dateFormat="mm/dd/yy" placeholder="MM/DD/YYYY">
+        </p-calendar>
+      </div>
+    </div>
+
+  </form>
+
+  <p-footer>
+    <button type="button" class="btn btn-secondary mr-2" (click)="editDisplay=false" i18n="@@cancel"> Cancel </button>
+    <button type="button" class="btn btn-primary" i18n="@@accept" (click)="onSaveEditMaintenance()"> Accept </button>
+  </p-footer>
+</p-dialog>
+
+
+
+<p-dialog header="Create Site" i18n-header="@@create-site" [(visible)]="createSite" [modal]="true"
+  *ngIf="" [responsive]="true" [style]="{width: '450px', minWidth: '200px'}" [minY]="70"
+  [closable]="false">
+
+  <app-site></app-site>
+
+  <p-footer>
+    <button type="button" class="btn btn-secondary mr-2" (click)="editDisplay=false" i18n="@@cancel"> Cancel </button>
+    <button type="button" class="btn btn-primary" i18n="@@accept" (click)="onSaveEditMaintenance()"> Accept </button>
+  </p-footer>
+</p-dialog>

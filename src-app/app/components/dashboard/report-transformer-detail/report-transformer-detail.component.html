@@ -1,0 +1,471 @@
+<div class="container">
+
+  <div class="page-header mb-3 ">
+    <h1 class="page-title">
+      <a href="#" [routerLink]="['/dashboard']" class="mr-3">
+        <i class="fa fa-chevron-left"></i>
+      </a>
+      <span *ngIf="transformer">{{transformer.name}}</span>
+    </h1>
+
+    <div class="page-options col-xs-12 col-sm">
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <div class="input-icon mb-3">
+        <p-dropdown #select [options]="granularities" [(ngModel)]="granularity"></p-dropdown>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-4">
+      <div class="input-icon mb-3">
+        <p-calendar [(ngModel)]="startDate" showTime="true" inputStyleClass="form-control" [locale]="langCalendar">
+        </p-calendar>
+        <span class="input-icon-addon">
+          <i class="fe fe-calendar"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-4">
+      <div class="input-icon  mb-3">
+        <p-calendar [(ngModel)]="endDate" showTime="true" [minDate]="startDate" inputStyleClass="form-control"
+          [locale]="langCalendar"></p-calendar>
+        <span class="input-icon-addon">
+          <i class="fe fe-calendar"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-4">
+      <button class="btn mb-3 mr-4 btn-secondary" (click)="exportToXLSX()">
+        <i class="fe fe-download"></i>
+      </button>
+      <button class="btn mb-3 btn-secondary" (click)="onFind()">
+        <i class="fe fe-refresh-cw"></i>
+      </button>
+    </div>
+
+  </div>
+  <div class="row row-cards row-deck d-none d-sm-block">
+    <div class="col-12">
+      <div class="card" *ngIf="transformer">
+        <div class="card-header">
+          <h3 class="card-title transformer-title" (click)="showTransformer()">
+            {{transformer.name}}
+          </h3>
+          <div class="card-options">
+          </div>
+        </div>
+        <table class="table table-outline table-vcenter card-table">
+          <thead>
+            <tr>
+              <th i18n="@@jobNumber">Job Number</th>
+              <th i18n="@@site">Site</th>
+              <th i18n="@@pressure">Pressure</th>
+              <th i18n="@@level">Level</th>
+              <th i18n="@@oil">Oil</th>
+              <th i18n="@@winding">Winding</th>
+              <th i18n="@@ambient">Ambient</th>
+              <th>SPR</th>
+              <th>PRD</th>
+              <th i18n="@@connected">Connected</th>
+              <th i18n="@@status">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngIf="transformer" class="transformer-row" (click)="showTransformer()">
+              <td>{{transformer.jobNumber}} </td>
+              <td><span>{{transformer['site.name']}}</span> </td>
+              <td>{{transformer.tankPressure?.toFixed(1)}} {{shortLabels.tankPressure}}
+              </td>
+              <td>{{transformer.liquidLevel?.toFixed(1)}} {{shortLabels.liquidLevel}} </td>
+              <td>{{transformer.oilTemperature?.toFixed(1)}} {{shortLabels.oilTemperature}}
+              </td>
+              <td>{{transformer.windingTemperature?.toFixed(1)}}
+                {{shortLabels.windingTemperature}} </td>
+              <td>{{transformer.ambientTemperature?.toFixed(1)}}
+                {{shortLabels.ambientTemperature}} </td>
+              <td class="">
+                <span class="badge badge-pill"
+                  [ngClass]="{'badge-danger': transformer.spr, 'badge-default': !transformer.spr}"><i
+                    class="fa fa-lightbulb-o "></i></span>
+              </td>
+              <td class="">
+                <span class="badge badge-pill"
+                  [ngClass]="{'badge-danger': transformer.prd, 'badge-default': !transformer.prd}"><i
+                    class="fa fa-lightbulb-o "></i></span>
+              </td>
+              <td class="text-center">
+                <span *ngIf="isOfflineTrnasformer(transformer?.logCreatedAt)">
+                  <i class="fe fe-wifi  fe-wifi-off text-red" aria-hidden="true"></i>
+                </span>
+                <span *ngIf="!isOfflineTrnasformer(transformer?.logCreatedAt)">
+                  <i class="fe fe-wifi  fe-wifi  text-green" aria-hidden="true"></i>
+                </span>
+              </td>
+              <td>
+                <span class="badge badge-success" *ngIf="transformer.status == 3" i18n="@@normal">Normal</span>
+                <span class="badge badge-warning" *ngIf="transformer.status == 2" i18n="@@warning">Warning</span>
+                <span class="badge badge-danger" *ngIf="transformer.status == 1" i18n="@@danger">Danger</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-cards row-deck d-block d-sm-none">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title" i18n="@@transformerinfodetail">Transformer Information</h3>
+          <div class="card-options">
+          </div>
+        </div>
+        <table class="table table-outline table-vcenter card-table " *ngIf="transformer" (click)="showTransformer()">
+          <tbody *ngIf="transformer">
+            <tr>
+              <th i18n="@@name">Name</th>
+              <td>{{transformer.name}} </td>
+            </tr>
+            <tr>
+              <th i18n="@@jobNumber">Job Number</th>
+              <td>{{transformer.jobNumber}} </td>
+            </tr>
+            <tr>
+              <th i18n="@@site">Site</th>
+              <td><span>{{transformer.siteName}}</span> </td>
+            </tr>
+
+            <tr>
+              <th i18n="@@pressure">Pressure</th>
+              <td>{{transformer.tankPressure?.toFixed(1)}} {{shortLabels.tankPressure}}
+              </td>
+            </tr>
+            <tr>
+              <th i18n="@@level">Level</th>
+              <td>{{transformer.liquidLevel?.toFixed(1)}} {{shortLabels.liquidLevel}} </td>
+            </tr>
+            <tr>
+              <th i18n="@@oil">Oil</th>
+              <td>{{transformer.oilTemperature?.toFixed(1)}} {{shortLabels.oilTemperature}}
+              </td>
+            </tr>
+            <tr>
+              <th i18n="@@winding">Winding</th>
+              <td>{{transformer.windingTemperature?.toFixed(1)}}
+                {{shortLabels.windingTemperature}}</td>
+            </tr>
+            <tr>
+              <th i18n="@@ambient">Ambient</th>
+              <td>{{transformer.ambientTemperature?.toFixed(1)}}
+                {{shortLabels.ambientTemperature}}</td>
+            </tr>
+            <tr>
+              <th>SPR</th>
+              <td>
+                <span class="badge badge-pill"
+                  [ngClass]="{'badge-danger': transformer.spr, 'badge-default': !transformer.spr}">
+                  <i class="fa fa-lightbulb-o "></i>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>PRD</th>
+              <td>
+                <span class="badge badge-pill"
+                  [ngClass]="{'badge-danger': transformer.prd, 'badge-default': !transformer.prd}">
+                  <i class="fa fa-lightbulb-o "></i>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>Connected</th>
+              <td class="">
+                <span *ngIf="isOfflineTrnasformer(transformer?.createdAt)">
+                  <i class="fe fe-wifi  fe-wifi-off text-red" aria-hidden="true"></i>
+                </span>
+                <span *ngIf="!isOfflineTrnasformer(transformer?.createdAt)">
+                  <i class="fe fe-wifi  fe-wifi  text-green" aria-hidden="true"></i>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th i18n="@@status">Status</th>
+              <td>
+                <span class="badge badge-success" *ngIf="transformer.status == 3" i18n="@@normal">Normal</span>
+                <span class="badge badge-warning" *ngIf="transformer.status == 2" i18n="@@warning">Warning</span>
+                <span class="badge badge-danger" *ngIf="transformer.status == 1" i18n="@@danger">Danger</span>
+              </td>
+            </tr>
+          </tbody>
+
+
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <p class="font-italic text-info" i18n="@@timeinfo">All times shown are in EST</p>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card" [ngClass]="{'card-fullscreen-wrap': chartTankPresureExpand}">
+        <div class="card-header">
+          <h3 class="card-title" i18n="@@tankPressureDetail">Tank Pressure</h3>
+          <div class="card-options">
+            <a (click)="chartTankPresureTable = !chartTankPresureTable" href="javascript:void(0)"
+              class="btn-secondary btn btn-sm mr-2">
+              <span class="fa fa-list"
+                [ngClass]="{'fa-list': !chartTankPresureTable, 'fa-line-chart ': chartTankPresureTable }"> </span>
+            </a>
+
+            <a *ngIf="!chartTankPresureExpand" (click)="chartTankPresureExpand = true" href="javascript:void(0)"
+              class="btn-secondary btn btn-sm">
+              <span class="fa fa-expand"> </span>
+            </a>
+            <a *ngIf="chartTankPresureExpand" (click)="chartTankPresureExpand = false" href="javascript:void(0)"
+              class="btn-secondary btn btn-sm">
+              <span class="fa fa-compress"></span>
+            </a>
+          </div>
+        </div>
+        <div class="card-body pt-0">
+          <p-chart #chartTankPresure type="line" [data]="chartData.tankPressure" [hidden]="chartTankPresureTable"
+            (onDataSelect)="selectData($event)" [plugins]="plugins">
+          </p-chart>
+          <div style="height: 240px; overflow-y: auto;" *ngIf="chartTankPresureTable">
+            <table class="table table-outline table-vcenter card-table">
+              <thead>
+                <tr>
+                  <th>Timestamp</th>
+                  <th i18n="@@level">Level</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of logs">
+                  <td>
+                    <span *ngIf="item.year">{{item.year}}</span>
+                    <span *ngIf="item.month">-{{item.month}}</span>
+                    <span *ngIf="item.week"> w {{item.week}}</span>
+                    <span *ngIf="item.date">{{item.date}}</span>
+                    <span *ngIf="item.hour"> h {{item.hour}}<span *ngIf="!item.minute">:00</span> </span>
+                    <span *ngIf="item.minute">:{{item.minute}}</span>
+                  </td>
+                  <td>{{item.tankPressure}} {{shortLabels.tankPressure}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card" [ngClass]="{'card-fullscreen-wrap': chartAmbientTemperatureExpand}">
+        <div class="card-header">
+          <h3 class="card-title" i18n="@@ambientTemperature">Ambient Temperature</h3>
+          <div class="card-options">
+            <a (click)="chartAmbientTemperatureTable = !chartAmbientTemperatureTable" href="javascript:void(0)"
+              class="btn-secondary btn btn-sm mr-2">
+              <span class="fa fa-list"
+                [ngClass]="{'fa-list': !chartAmbientTemperatureTable, 'fa-line-chart ': chartAmbientTemperatureTable }">
+              </span>
+            </a>
+            <a *ngIf="!chartAmbientTemperatureExpand" (click)="chartAmbientTemperatureExpand = true"
+              href="javascript:void(0)" class="btn-secondary btn btn-sm">
+              <span class="fa fa-expand"> </span>
+            </a>
+            <a *ngIf="chartAmbientTemperatureExpand" (click)="chartAmbientTemperatureExpand = false"
+              href="javascript:void(0)" class="btn-secondary btn btn-sm">
+              <span class="fa fa-compress"></span>
+            </a>
+          </div>
+        </div>
+        <div class="card-body pt-0">
+          <p-chart #chartAmbientTemperature type="line" [data]="chartData.ambientTemperature"
+            [hidden]="chartAmbientTemperatureTable" (onDataSelect)="selectData($event)"></p-chart>
+          <div style="height: 240px; overflow-y: auto;" *ngIf="chartAmbientTemperatureTable">
+            <table class="table table-outline table-vcenter card-table">
+              <thead>
+                <tr>
+                  <th>Timestamp</th>
+                  <th i18n="@@level">Level</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of logs">
+                  <td>
+                    <span *ngIf="item.year">{{item.year}}</span>
+                    <span *ngIf="item.month">-{{item.month}}</span>
+                    <span *ngIf="item.week"> w {{item.week}}</span>
+                    <span *ngIf="item.date">{{item.date}}</span>
+                    <span *ngIf="item.hour"> h {{item.hour}}<span *ngIf="!item.minute">:00</span> </span>
+                    <span *ngIf="item.minute">:{{item.minute}}</span>
+                  </td>
+                  <td>{{item.ambientTemperature}} {{shortLabels.ambientTemperature}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card" [ngClass]="{'card-fullscreen-wrap': chartLiquidLevelExpand}">
+        <div class="card-header">
+          <h3 class="card-title" i18n="@@liquidLevel">Liquid Level</h3>
+          <div class="card-options">
+
+            <a *ngIf="!chartLiquidLevelExpand" (click)="chartLiquidLevelTable = !chartLiquidLevelTable"
+              href="javascript:void(0)" class="btn-secondary btn btn-sm mr-2">
+              <span class="fa fa-list"
+                [ngClass]="{'fa-list': !chartLiquidLevelTable, 'fa-line-chart ': chartLiquidLevelTable }"> </span>
+            </a>
+
+            <a *ngIf="!chartLiquidLevelExpand" (click)="chartLiquidLevelExpand = true" href="javascript:void(0)"
+              class="btn-secondary btn btn-sm">
+              <span class="fa fa-expand"> </span>
+            </a>
+            <a *ngIf="chartLiquidLevelExpand" (click)="chartLiquidLevelExpand = false" href="javascript:void(0)"
+              class="btn-secondary btn btn-sm">
+              <span class="fa fa-compress"></span>
+            </a>
+          </div>
+        </div>
+        <div class="card-body pt-0">
+          <p-chart #chartLiquidLevel type="line" [data]="chartData.liquidLevel" [hidden]="chartLiquidLevelTable"
+            (onDataSelect)="selectData($event)">
+          </p-chart>
+          <div style="height: 240px; overflow-y: auto;" *ngIf="chartLiquidLevelTable">
+            <table class="table table-outline table-vcenter card-table">
+              <thead>
+                <tr>
+                  <th>Timestamp</th>
+                  <th i18n="@@level">Level</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of logs">
+                  <td>
+                    <span *ngIf="item.year">{{item.year}}</span>
+                    <span *ngIf="item.month">-{{item.month}}</span>
+                    <span *ngIf="item.week"> w {{item.week}}</span>
+                    <span *ngIf="item.date">{{item.date}}</span>
+                    <span *ngIf="item.hour"> h {{item.hour}}<span *ngIf="!item.minute">:00</span> </span>
+                    <span *ngIf="item.minute">:{{item.minute}}</span>
+                  </td>
+                  <td>{{item.liquidLevel}} {{shortLabels.liquidLevel}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card" [ngClass]="{'card-fullscreen-wrap': chartOilTemperatureExpand}">
+        <div class="card-header">
+          <h3 class="card-title" i18n="@@oilTemperature">Oil Temperature</h3>
+          <div class="card-options">
+            <a (click)="chartOilTemperatureTable = !chartOilTemperatureTable" href="javascript:void(0)"
+              class="btn-secondary btn btn-sm mr-2">
+              <span class="fa fa-list"
+                [ngClass]="{'fa-list': !chartOilTemperatureTable, 'fa-line-chart ': chartOilTemperatureTable }"> </span>
+            </a>
+            <a *ngIf="!chartOilTemperatureExpand" (click)="chartOilTemperatureExpand = true" href="javascript:void(0)"
+              class="btn-secondary btn btn-sm">
+              <span class="fa fa-expand"> </span>
+            </a>
+            <a *ngIf="chartOilTemperatureExpand" (click)="chartOilTemperatureExpand = false" href="javascript:void(0)"
+              class="btn-secondary btn btn-sm">
+              <span class="fa fa-compress"></span>
+            </a>
+          </div>
+        </div>
+        <div class="card-body pt-0">
+          <p-chart #chartOilTemperature type="line" [data]="chartData.oilTemperature"
+            [hidden]="chartOilTemperatureTable" (onDataSelect)="selectData($event)"></p-chart>
+          <div style="height: 240px; overflow-y: auto;" *ngIf="chartOilTemperatureTable">
+            <table class="table table-outline table-vcenter card-table">
+              <thead>
+                <tr>
+                  <th>Timestamp</th>
+                  <th i18n="@@level">Level</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of logs">
+                  <td>
+                    <span *ngIf="item.year">{{item.year}}</span>
+                    <span *ngIf="item.month">-{{item.month}}</span>
+                    <span *ngIf="item.week"> w {{item.week}}</span>
+                    <span *ngIf="item.date">{{item.date}}</span>
+                    <span *ngIf="item.hour"> h {{item.hour}}<span *ngIf="!item.minute">:00</span> </span>
+                    <span *ngIf="item.minute">:{{item.minute}}</span>
+                  </td>
+                  <td>{{item.oilTemperature}} {{shortLabels.oilTemperature}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card" [ngClass]="{'card-fullscreen-wrap': chartWindingTemperatureExpand}">
+        <div class="card-header">
+          <h3 class="card-title" i18n="@@windingTemperature">Winding Temperature</h3>
+          <div class="card-options">
+            <a (click)="chartWindingTemperatureTable = !chartWindingTemperatureTable" href="javascript:void(0)"
+              class="btn-secondary btn btn-sm mr-2">
+              <span class="fa fa-list"
+                [ngClass]="{'fa-list': !chartWindingTemperatureTable, 'fa-line-chart ': chartWindingTemperatureTable }">
+              </span>
+            </a>
+            <a *ngIf="!chartWindingTemperatureExpand" (click)="chartWindingTemperatureExpand = true"
+              href="javascript:void(0)" class="btn-secondary btn btn-sm">
+              <span class="fa fa-expand"> </span>
+            </a>
+            <a *ngIf="chartWindingTemperatureExpand" (click)="chartWindingTemperatureExpand = false"
+              href="javascript:void(0)" class="btn-secondary btn btn-sm">
+              <span class="fa fa-compress"></span>
+            </a>
+          </div>
+        </div>
+        <div class="card-body pt-0">
+          <p-chart #chartWindingTemperature type="line" [data]="chartData.windingTemperature"
+            [hidden]="chartWindingTemperatureTable" (onDataSelect)="selectData($event)"></p-chart>
+          <div style="height: 240px; overflow-y: auto;" *ngIf="chartWindingTemperatureTable">
+            <table class="table table-outline table-vcenter card-table">
+              <thead>
+                <tr>
+                  <th>Timestamp</th>
+                  <th i18n="@@level">Level</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of logs">
+                  <td>
+                    <span *ngIf="item.year">{{item.year}}</span>
+                    <span *ngIf="item.month">-{{item.month}}</span>
+                    <span *ngIf="item.week"> w {{item.week}}</span>
+                    <span *ngIf="item.date">{{item.date}}</span>
+                    <span *ngIf="item.hour"> h {{item.hour}}<span *ngIf="!item.minute">:00</span> </span>
+                    <span *ngIf="item.minute">:{{item.minute}}</span>
+                  </td>
+                  <td>{{item.windingTemperature}} {{shortLabels.windingTemperature}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

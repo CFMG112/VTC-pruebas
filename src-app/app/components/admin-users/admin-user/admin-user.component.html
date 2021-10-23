@@ -1,0 +1,99 @@
+<div class="container">
+  <div class="page-header">
+    <h1 class="page-title">
+
+      <a href="#" [routerLink]="['../../user-list']" class="mr-3">
+        <i class="fa fa-chevron-left"></i>
+      </a>
+      <span i18n="@@user">User</span>
+    </h1>
+  </div>
+
+  <div>
+    <form *ngIf="user" name="form" #f="ngForm" (ngSubmit)="f.form.valid && save()" novalidate>
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="form-label" for="name" i18n="@@name*">Name
+              <span class="form-required">*</span>
+            </label>
+            <input type="text" class="form-control" [(ngModel)]="user.firstName" name="name" 
+              maxlength="45" i18n-placeholder="@@name"
+              placeholder="Name" required #name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && name.invalid }">
+            <div class="invalid-feedback" *ngIf="f.submitted && name.invalid">
+              <div *ngIf="name.errors.required" i18n="@@requiredError">Required</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="form-label" for="lastName" i18n="@@lastName*">Last name
+              <span class="form-required">*</span>
+            </label>
+            <input type="text" class="form-control" [(ngModel)]="user.lastName" 
+              maxlength="45" name="lastName"
+              i18n-placeholder="@@lastname" placeholder="Last name" required #lastName="ngModel"
+              [ngClass]="{ 'is-invalid': f.submitted && lastName.invalid }">
+            <div class="invalid-feedback" *ngIf="f.submitted && lastName.invalid">
+              <div *ngIf="lastName.errors.required" i18n="@@requiredError">Required</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="email" i18n="@@email*">Email</label>
+            <input type="email" name="email" class="form-control" id="email" required email i18n-placeholder="@@email"
+              placeholder="Email" #u="ngModel" maxlength="45" [(ngModel)]="user.username" [disabled]="action==='edit'"
+              [ngClass]="{ 'is-invalid': f.submitted && u.invalid }">
+            <div class="invalid-feedback" *ngIf="f.submitted && u.invalid">
+              <div i18n="@@requiredError" *ngIf="u.errors.required"> Required</div>
+              <div i18n="@@usernameFormatError" *ngIf="u.errors.email">Must be a valid email</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" *ngIf="action != 'edit'">
+          <div class="form-group">
+            <label i18n="@@passwordLabel" class="form-label" for="password">Password <span
+                class="form-required">*</span></label>
+            <input type="password" name="password" class="form-control" id="password" 
+              maxlength="100" required
+              i18n-placeholder="@@passwordPlaceholder" placeholder="Password" #p="ngModel" [(ngModel)]="user.password"
+              [ngClass]="{ 'is-invalid': f.submitted && (p.invalid || matchingError) }">
+            <div class="invalid-feedback" *ngIf="f.submitted && (p.invalid || matchingError)">
+              <div i18n="@@requiredError" *ngIf="p.errors?.required"> Required</div>
+              <div i18n="@@passwordError" *ngIf="matchingError">Password not match</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4" *ngIf="action != 'edit'">
+          <div class="form-group">
+            <label i18n="@@doublePasswordLabel" class="form-label" for="doublePassword">Confirm Password <span
+                class="form-required">*</span></label>
+            <input type="password" name="doublePassword" class="form-control" id="doublePassword" required
+              placeholder="Password" #dp="ngModel" i18n-placeholder="@@doublePasswordPlaceholder"
+              [(ngModel)]="passwordConfirmation" maxlength="100"
+              [ngClass]="{ 'is-invalid': f.submitted && (dp.invalid || matchingError) }">
+            <div class="invalid-feedback" *ngIf="f.submitted && (dp.invalid || matchingError)">
+              <div i18n="@@requiredError" *ngIf="dp.errors?.required"> Required</div>
+              <div i18n="@@passwordError" *ngIf="matchingError">Password not match</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p i18n="@@requiredFiles"><span class="form-required">*</span> Required fields</p>
+      <div class="form-group pt-4">
+        <button type="submit" class="btn btn-primary" i18n="@@save">Save</button>
+        <button type="button" class="btn btn-secondary ml-2" [routerLink]="['../../user-list']"
+          i18n="@@cancel">Cancel</button>
+      </div>
+
+    </form>
+  </div>
+</div>

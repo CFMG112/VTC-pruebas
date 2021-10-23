@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="page-header">
+    <h1 class="page-title" i18n="@@faqfull">
+      Frequently Asked Questions
+    </h1>
+    <div class="page-options d-flex">
+      <div class="input-icon">
+        <span class="input-icon-addon">
+          <i class="fe fe-search"></i>
+        </span>
+        <input type="text" class="form-control w-10" i18n-placeholder="@@searchPlaceholder" placeholder="Search..."
+          (keyup)="onFilter()" [(ngModel)]="filter">
+      </div>
+      <button  type="button" name="button" class="btn btn-secondary ml-2"
+        [routerLink]="['../faq/create']" i18n="@@add">Add
+      </button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12" *ngFor="let faq of faqs">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title"> <strong>{{faq.question}}</strong> </h3>
+          <div class="card-options" >
+            <td [routerLink]="['../faq', faq.id]" class="btn btn-sm btn-secondary mr-2">
+              <i class="fa fa-pencil"></i>
+            </td>
+            <button (click)="onDeleteDialog(faq)" class="btn btn-sm btn-danger">
+              <i class="fa fa-trash"></i>
+            </button>
+          </div>
+        </div>
+        <div class="card-body pt-0">
+          <div class=""> {{faq.answer}} </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+<p-dialog header="Delete Question" i18n-header="@@delete" [(visible)]="display" [modal]="true" *ngIf="faq"
+  [responsive]="true" [style]="{width: '350px', minWidth: '200px'}" [minY]="70" [closable]="false" [baseZIndex]="10000">
+
+  <div class="" i18n>
+    Are you sure you want to delete the Question permanently?
+    <p class="mt-2"><strong>This can't be undone</strong></p>
+  </div>
+
+
+  <p-footer>
+    <button type="button" class="btn btn-secondary mr-2" (click)="display=false" i18n="@@cancel"> Cancel </button>
+    <button type="button" class="btn btn-danger" (click)="delete(faq.id)" i18n="@@delete"> Delete </button>
+  </p-footer>
+</p-dialog>

@@ -1,0 +1,16 @@
+<div class="header py-0">
+  <div class="container-fluid">
+    <div class="row d-flex  mx-0">
+      <a class="header-brand py-3" href="" [routerLink]="['/dashboard']">
+        <img src="./assets/img/logo_vt_flat_v3.svg" class="header-brand-img" alt="VTC Sentry">
+      </a>
+      <app-menu class="col"></app-menu>
+      <a href="javascript:void(0)"  class="header-toggler d-lg-none m-4" (click)="menu.toggle($event)">
+        <span class="header-toggler-icon"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<p-menu #menu [popup]="true" [model]="items"></p-menu>

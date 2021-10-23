@@ -1,0 +1,84 @@
+<div class="container">
+  <div class="page-header">
+    <h1 class="page-title" i18n="@@maintenance">
+      Maintenance
+    </h1>
+  </div>
+
+  <div>
+    <form *ngIf="maintenance" name="form" #f="ngForm" (ngSubmit)="f.form.valid && onSave()">
+      <div class="row">
+
+        <div class="col-md-4 ">
+          <div class="form-group">
+            <label class="form-label" for="name" i18n="@@type*">Type
+              <span class="form-required">*</span>
+            </label>
+            <input type="text" class="form-control" i18n-placeholder="@@type" [(ngModel)]="maintenance.type" name="name"
+              placeholder="Type" required maxlength="45" #name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && name.invalid }">
+            <div class="invalid-feedback" *ngIf="f.submitted && name.invalid">
+              <div *ngIf="name.errors.required" i18n="@@requiredError">Required</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="form-label" for="frequency" i18n="@@frequency">Frequency
+              <span class="form-required">*</span>
+            </label>
+            <input type="number" class="form-control" i18n-placeholder="@@months" [(ngModel)]="maintenance.frequency"
+              name="frequency" placeholder="Months" required #frequency="ngModel"
+              [ngClass]="{ 'is-invalid': f.submitted && frequency.invalid }">
+            <div class="invalid-feedback" *ngIf="f.submitted && frequency.invalid">
+              <div *ngIf="frequency.errors.required" i18n="@@requiredError">Required</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="form-group">
+            <label class="form-label" for="name" i18n="@@description*">Description
+              <span class="form-required">*</span>
+            </label>
+            <textarea rows="5" class="form-control" i18n-placeholder="@@description"
+              [(ngModel)]="maintenance.description" name="description" placeholder="Description" required
+              #description="ngModel" maxlength="500" [ngClass]="{ 'is-invalid': f.submitted && description.invalid }"></textarea>
+            <div class="invalid-feedback" *ngIf="f.submitted && description.invalid">
+              <div *ngIf="description.errors.required" i18n="@@requiredError">Required</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 d-flex align-items-end">
+          <div class="form-group">
+
+            <label class="custom-switch mr-2">
+              <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input"
+                [(ngModel)]="maintenance.predefined">
+              <span class="custom-switch-indicator"></span>
+              <span class="custom-switch-description">
+                <span *ngIf="maintenance.predefined" i18n="@@predefined">Predefined</span>
+                <span *ngIf="!maintenance.predefined" i18n="@@notPredefined">Not predefined</span>
+              </span>
+            </label>
+
+          </div>
+        </div>
+      </div>
+
+
+      <p i18n="@@requiredFields"><span class="form-required">*</span> Required fields</p>
+      <div class="form-group pt-4">
+        <button type="submit" class="btn btn-primary" i18n="@@save">Save</button>
+        <button type="button" class="btn btn-secondary ml-2" [routerLink]="['/catalogs/maintenance']"
+          i18n="@@cancel">Cancel</button>
+      </div>
+
+    </form>
+  </div>
+
+
+</div>

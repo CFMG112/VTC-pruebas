@@ -1,0 +1,132 @@
+<div class="page-header">
+  <h1 class="page-title">
+    <a  (click)="back()" class="mr-3 pointer">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <span i18n="@@site">Site</span>
+  </h1>
+</div>
+
+<div>
+  <form *ngIf="site" name="form" #f="ngForm" (ngSubmit)="f.form.valid && save()" novalidate>
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="form-label" for="name" i18n="@@name*">Name
+            <span class="form-required">*</span>
+          </label>
+          <input type="text" class="form-control" [(ngModel)]="site.name" name="name" placeholder="Name"
+            [attr.disabled]="adminPermissions ? null : ''" i18n-placeholder="@@name" required #name="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && name.invalid }">
+          <div class="invalid-feedback" *ngIf="f.submitted && name.invalid">
+            <div *ngIf="name.errors.required" i18n="@@requiredError">Required</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="form-label" for="country" i18n="@@country*">Country
+            <span class="form-required">*</span>
+          </label>
+          <p-dropdown [options]="countries" (onChange)="onFindSatates()" [(ngModel)]="site.country" [filter]="true"
+            [disabled]="adminPermissions ? null : ''" name="country" placeholder="Country" i18n-placeholder="@@country"
+            required #country="ngModel" [ngClass]="{ 'is-invalid': f.submitted && country.invalid }">
+          </p-dropdown>
+          <div class="invalid-feedback" *ngIf="f.submitted && country.invalid">
+            <div *ngIf="country.errors.required" i18n="@@requiredError">Required</div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="form-label" for="state" i18n="@@state*">State
+            <span class="form-required">*</span>
+          </label>
+          <p-dropdown [options]="states" (onChange)="onFindCities()" [(ngModel)]="site.state" [filter]="true"
+            [disabled]="adminPermissions ? null : ''" name="state" placeholder="State" i18n-placeholder="@@state"
+            required #state="ngModel" [ngClass]="{ 'is-invalid': f.submitted && state.invalid }">
+          </p-dropdown>
+          <div class="invalid-feedback" *ngIf="f.submitted && state.invalid">
+            <div *ngIf="state.errors.required" i18n="@@requiredError">Required</div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="form-label" for="name" i18n="@@city*">City
+            <span class="form-required">*</span>
+          </label>
+          <p-dropdown [options]="cities" [(ngModel)]="site.city" [filter]="true" name="City" placeholder="city"
+            [disabled]="adminPermissions ? null : ''" i18n-placeholder="@@city" required #city="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && city.invalid }">
+          </p-dropdown>
+          <div class="invalid-feedback" *ngIf="f.submitted && city.invalid">
+            <div *ngIf="city.errors.required" i18n="@@requiredError">Required</div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="form-label" for="extra" i18n="@@extra*">Extra
+          </label>
+          <input type="text" class="form-control" [(ngModel)]="site.addedcity" name="extra"
+            [attr.disabled]="adminPermissions ? null : ''" placeholder="Outside Location" i18n-placeholder="@@extra">
+
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="form-label" for="address" i18n="@@address*">Address
+            <span class="form-required">*</span>
+          </label>
+          <input type="text" class="form-control" i18n-placeholder="@@address" [(ngModel)]="site.addressInfo"
+            name="address" [attr.disabled]="adminPermissions ? null : ''" placeholder="Address" required
+            #address="ngModel" [ngClass]="{ 'is-invalid': f.submitted && address.invalid }">
+          <div class="invalid-feedback" *ngIf="f.submitted && address.invalid">
+            <div *ngIf="address.errors.required" i18n="@@requiredError">Required</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p i18n="@@requiredFields"><span class="form-required">*</span> Required fields</p>
+    <div class="form-group pt-4">
+      <button type="submit" class="btn btn-primary" i18n="@@save">Save</button>
+      <button type="button" class="btn btn-secondary ml-2" (click)="back()" i18n="@@cancel">Cancel</button>
+    </div>
+
+  </form>
+</div>
+
+
+
+<!-- <div class="row">
+    <div class="col-xs col-sm-6 col-md-3">
+      <div class="form-group">
+ 
+        <p-dropdown [options]="accounts" [(ngModel)]="selectedAccount" (onChange)="onFilter()" [filter]="true">
+        </p-dropdown>
+      </div>
+    </div>
+  
+    <div class="col-xs col-sm-6 col-md-3">
+      <div class="form-group">
+
+        <p-dropdown [options]="roles" [(ngModel)]="selectedRole" (onChange)="onFilter()" [filter]="true"></p-dropdown>
+      </div>
+    </div>
+  
+    <div class="col-xs">
+      <button type="button" name="button" class="btn btn-secondary" [routerLink]="['/users/user/create']">Add</button>
+    </div>
+  </div> -->

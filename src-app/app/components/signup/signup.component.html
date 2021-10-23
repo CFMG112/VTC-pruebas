@@ -1,0 +1,85 @@
+<div class="row">
+  <div class="col col-6 mx-auto mt-5">
+    <div class="text-center mb-2">
+      <img src="./assets/img/logo.png" class="h-9 " alt="logo">
+    </div>
+    <h3></h3>
+    <form name="form" #f="ngForm" class="card" (ngSubmit)="f.form.valid && onSignUp()" novalidate>
+      <div class="card-body p-6">
+
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+              <label i18n="@@firstNameLabel" for="firstName">Name</label>
+              <input type="text" name="firstName" class="form-control" id="firstName" required
+                i18n-placeholder="@@firstNamePlaceholder" placeholder="Name" [(ngModel)]="firstName" #fn="ngModel"
+                [ngClass]="{ 'is-invalid': f.submitted && fn.invalid }">
+              <div class="invalid-feedback" *ngIf="f.submitted && fn.invalid">
+                <div i18n="@@requiredError" *ngIf="fn.errors.required"> Required</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label i18n="@@lastNameLabel" for="lastName">Last Name</label>
+              <input type="text" name="lastName" class="form-control" id="lastName" required
+                i18n-placeholder="@@lastNamePlaceholder" placeholder="Last Name" #ln="ngModel" [(ngModel)]="lastName"
+                [ngClass]="{ 'is-invalid': f.submitted && ln.invalid }">
+              <div class="invalid-feedback" *ngIf="f.submitted && ln.invalid">
+                <div i18n="@@requiredError" *ngIf="ln.errors.required"> Required</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label i18n="@@emailLabel" for="email">Email</label>
+          <input type="email" name="email" class="form-control" id="email" required email
+            i18n-placeholder="@@emailPlaceholder" placeholder="Email" #e="ngModel" [(ngModel)]="email"
+            [ngClass]="{ 'is-invalid': f.submitted && e.invalid }">
+          <div class="invalid-feedback" *ngIf="f.submitted && e.invalid">
+            <div i18n="@@requiredError" *ngIf="e.errors.required"> Required</div>
+            <div i18n="@@emailError" *ngIf="e.errors.email">Email has to be a valid email</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label i18n="@@passwordLabel" for="password">Password </label>
+          <input type="password" name="password" class="form-control" id="password" required
+            i18n-placeholder="@@passwordPlaceholder" placeholder="Password" #p="ngModel" [(ngModel)]="password"
+            [ngClass]="{ 'is-invalid': f.submitted && (p.invalid || matchingError) }">
+          <div class="invalid-feedback" *ngIf="f.submitted && (p.invalid || matchingError)">
+            <div i18n="@@requiredError" *ngIf="p.errors?.required"> Required</div>
+            <div i18n="@@passwordError" *ngIf="matchingError">Password not match</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label i18n="@@doublePasswordLabel" for="doublePassword">Confirm Password </label>
+          <input type="password" name="doublePassword" class="form-control" id="doublePassword" required
+            placeholder="Password" #dp="ngModel" i18n-placeholder="@@doublePasswordPlaceholder"
+            [(ngModel)]="passwordConfirmation"
+            [ngClass]="{ 'is-invalid': f.submitted && (dp.invalid || matchingError) }">
+          <div class="invalid-feedback" *ngIf="f.submitted && (dp.invalid || matchingError)">
+            <div i18n="@@requiredError" *ngIf="dp.errors?.required"> Required</div>
+            <div i18n="@@passwordError" *ngIf="matchingError">Password not match</div>
+          </div>
+        </div>
+        <div class="invalid-feedback" *ngIf="errorMessage">
+          <div> {{errorMessage}}</div>
+        </div>
+        <div class="form-footer">
+          <button type="submit" class="btn btn-block btn-primary" i18n="@@createAccountButton">
+            Create User
+          </button>
+        </div>
+      </div>
+    </form>
+    <div class="text-center text-muted mb-2">
+      <a href="" [routerLink]="['/login']" i18n="@@login">Login</a>
+    </div>
+    <div class="text-center text-muted">
+      Copyright © 2019 Leading Technologies
+    </div>
+  </div>
+</div>

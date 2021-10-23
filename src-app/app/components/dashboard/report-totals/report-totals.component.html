@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col-6 col-sm-6 col-lg-3">
+    <div class="card p-3 btn-cursor" (click)="onClick()">
+      <div class="d-flex align-items-center">
+        <span class="stamp stamp-md bg-grey mr-3">
+          {{transformers?.length || 0}}
+        </span>
+        <div>
+          <h4 class="m-0"><small i18n="@@total">Total</small></h4>
+          <small class="text-muted">Total transformers</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-lg-3">
+    <div class="card p-3 btn-cursor" (click)="onClick(3)">
+      <div class="d-flex align-items-center">
+        <span class="stamp stamp-md bg-green mr-3">
+          {{healthysCount()}}
+        </span>
+        <div>
+          <h4 class="m-0"><small i18n="@@healthys">Healthys</small></h4>
+          <small class="text-muted" i18n="@@total2w">Total in 2 weeks</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-lg-3">
+    <div class="card p-3 btn-cursor" (click)="onClick(2)">
+      <div class="d-flex align-items-center">
+        <span class="stamp stamp-md bg-yellow mr-3">
+          {{warningCount()}}
+        </span>
+        <div>
+          <h4 class="m-0"><small i18n="@@warnings">Warnings</small></h4>
+          <small class="text-muted" i18n="@@total2w">Total in 2 weeks</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-lg-3">
+    <div class="card p-3 btn-cursor" (click)="onClick(1)">
+      <div class="d-flex align-items-center">
+        <span class="stamp stamp-md bg-red mr-3">
+          {{dangerCount()}}
+        </span>
+        <div>
+          <h4 class="m-0"><small i18n="@@danger">Danger</small></h4>
+          <small class="text-muted" i18n="@@total2w">Total in 2 weeks</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
