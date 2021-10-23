@@ -3,7 +3,8 @@ import { DataService } from '@services/data.service';
 import { PreferencesService } from '@services/preferences.service';
 import { SecurityService } from '@services/security.service';
 import { MeasurementUnitMapper } from '@services/measurement-unit-mapper.service';
-import { ThrowStmt } from '@angular/compiler';
+import * as translate from "../../../../locale/traductor";
+
 
 const INTERVAL = 1000 * 60 * 1; // each minute
 
@@ -35,6 +36,7 @@ export class ReportTransformerListComponent implements OnInit, OnDestroy {
     'name': "english",
     'locale': "en"
   }
+  translate = translate.translate;
 
   constructor(
     private dataService: DataService,

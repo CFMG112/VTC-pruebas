@@ -2,7 +2,7 @@
 
   <div class="col-sm-6 col-md-3" *roleCanAccess="['user']">
     <div class="form-group">
-      <label class="form-label" for="categoryId" i18n="@@site">Site </label>
+      <label class="form-label" for="categoryId" i18n="@@site">{{(this.lang.locale=="es")?this.translate["Site"]:"Site"}} </label>
       <p-dropdown [options]="sites" [(ngModel)]="selectedSiteId" (onChange)="onRefresh()"></p-dropdown>
     </div>
   </div>
